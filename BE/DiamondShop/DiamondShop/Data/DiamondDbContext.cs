@@ -49,7 +49,31 @@ namespace FAMS.Entities.Data
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<User>(e =>
+            modelBuilder.Entity<Certificate>(entity =>
+            {
+                // Chỉ định kiểu dữ liệu cho trường CaratWeight
+                entity.Property(e => e.CaratWeight).HasColumnType("decimal(18,2)");
+            });
+
+            modelBuilder.Entity<Order>(entity =>
+            {
+                // Chỉ định kiểu dữ liệu cho trường TotalPrice
+                entity.Property(e => e.TotalPrice).HasColumnType("decimal(18,2)");
+            });
+
+            modelBuilder.Entity<OrderDetail>(entity =>
+            {
+                // Chỉ định kiểu dữ liệu cho trường Price
+                entity.Property(e => e.Price).HasColumnType("decimal(18,2)");
+            });
+
+            modelBuilder.Entity<ProductDetail>(entity =>
+            {
+                // Chỉ định kiểu dữ liệu cho trường Carat
+                entity.Property(e => e.Carat).HasColumnType("decimal(18,2)");
+            });
+
+            modelBuilder.Entity<User>(e =>
 			{
 				e.ToTable("User");
 				e.HasKey(x => x.userID);
