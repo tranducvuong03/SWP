@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
+    "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
-    "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
+    "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectUniqueName": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "projectName": "DiamondShop",
-        "projectPath": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
-        "outputPath": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
+        "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
