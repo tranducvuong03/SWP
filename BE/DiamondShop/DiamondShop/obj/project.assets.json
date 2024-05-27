@@ -8257,19 +8257,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\cryno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "projectUniqueName": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "projectName": "DiamondShop",
-      "projectPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+      "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
+      "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
