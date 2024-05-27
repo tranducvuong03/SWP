@@ -8261,11 +8261,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "projectName": "DiamondShop",
       "projectPath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+=======
+      "projectUniqueName": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "projectName": "DiamondShop",
+      "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
+      "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
+>>>>>>> 855e22b52e0057e820694d654705892ebb6673d0
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
