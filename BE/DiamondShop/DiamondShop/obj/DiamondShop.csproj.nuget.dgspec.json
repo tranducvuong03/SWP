@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
-  },
-  "projects": {
-    "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "projectName": "DiamondShop",
-        "projectPath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
-=======
     "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
@@ -25,10 +12,9 @@
         "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
         "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
->>>>>>> 855e22b52e0057e820694d654705892ebb6673d0
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
