@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Ctw3Cxwus7za39pjWCsv4NRjpEG0XCTC0mB6qLu97EwR6QpKHtrHNGs+Bxh6+GcZriNmI2BDHB0ik53NMsHagQ==",
+  "dgSpecHash": "wMxL5jaMaYi+/JqoLzYhq1p6wjLkeT4DHAWrCZ+yd0ZbQ+qpgAPxnnHaYRXrOkVnPIZHlkDHHVx0fGAD9O/Yvw==",
   "success": true,
-  "projectFilePath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-=======
-  "dgSpecHash": "nOblJVzqbW5MP6ZE4ypPM82ZzYeCoj9FcRdLSUlERqHyhIVQ7KuQ5cccF1pD/LiwXaN44/ni//Er+GeMa03hUg==",
-  "success": true,
-  "projectFilePath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
->>>>>>> 855e22b52e0057e820694d654705892ebb6673d0
+  "projectFilePath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -176,5 +170,12 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
