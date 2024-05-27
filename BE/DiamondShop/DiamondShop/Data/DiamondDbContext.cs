@@ -10,7 +10,30 @@ namespace FAMS.Entities.Data
 {
     public class DiamondDbContext : DbContext
     {
-        public DiamondDbContext(DbContextOptions<DiamondDbContext> options) : base(options) { }
+		public DiamondDbContext()
+		{
+
+		}
+		public DiamondDbContext(DbContextOptions<DiamondDbContext> options) : base(options)
+		{
+		}
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			if (!optionsBuilder.IsConfigured)
+			{
+				optionsBuilder.UseSqlServer(GetConnectionString());
+			}
+		}
+		private string GetConnectionString()
+		{
+			IConfiguration config = new ConfigurationBuilder()
+			 .SetBasePath(Directory.GetCurrentDirectory())
+			.AddJsonFile("appsettings.json", true, true)
+			.Build();
+			var strConn = /*config["ConnectionStrings:DB"]*/ config.GetConnectionString("EFDataContext");
+
+			return strConn;
+		}
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }

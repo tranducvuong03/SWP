@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
+    "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
-    "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
+    "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectUniqueName": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "projectName": "DiamondShop",
-        "projectPath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+        "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
+        "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,12 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.5, )"
             },
