@@ -17,18 +17,7 @@ namespace DiamondShop.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var users = await _context.Users
-                .Include(u => u.Role)
-                .Select(u => new Data.UserViewModel
-                {
-                    UserId = u.UserId,
-                    FullName = u.FullName,
-                    Email = u.Email,
-                    RoleName = u.Role.RoleName
-                })
-                .ToListAsync();
-
-            return View(users);
+            return View();
         }
     }
 }

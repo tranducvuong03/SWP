@@ -5,24 +5,16 @@ namespace DiamondShop.Data
 {
     public class User
     {
-        [Key]
-        public int UserId { get; set; }
-        public int RoleId { get; set; }
-        [Required]
-        public string Email { get; set; } = null!;
-        [Required]
-        public string Status { get; set; } = null!;
-        [Required]
-        public string FullName { get; set; } = null!;
-        [Required]
-        public string Username { get; set; } = null!;
-        [Required]
-        public string Password { get; set; } = null!;
+		[Key]
+		[Required]
+		public int userID { get; set; }
+		public string? username { get; set; }
+		public string password { get; set; }
+		public string? email { get; set; }
+		public string? fullName { get; set; }
+		public bool? status { get; set; }
+		public int roleID { get; set; }
 
-        public Role Role { get; set; } = null!;
-        public ICollection<ShoppingCart> ShoppingCarts { get; set; } = new List<ShoppingCart>();
-        public ICollection<Order> Orders { get; set; } = new List<Order>();
-        public ICollection<Warranty> Warranties { get; set; } = new List<Warranty>();
-        public ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
-    }
+		public virtual Role role { get; set; }
+	}
 }
