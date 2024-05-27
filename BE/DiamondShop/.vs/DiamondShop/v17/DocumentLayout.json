@@ -7,7 +7,15 @@
       "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|d:\\ecommerce\\be\\diamondshop\\diamondshop\\data\\diamonddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|D:\\Ecommerce\\BE\\DiamondShop\\diamondshop\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|D:\\Ecommerce\\BE\\DiamondShop\\diamondshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|D:\\Ecommerce\\BE\\DiamondShop\\diamondshop\\data\\diamonddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\data\\diamonddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|D:\\Ecommerce\\BE\\DiamondShop\\diamondshop\\data\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\data\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|D:\\Ecommerce\\BE\\DiamondShop\\diamondshop\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|D:\\Ecommerce\\BE\\DiamondShop\\diamondshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF0B678B-665D-4C30-AC23-9C9AAFE67678}|DiamondShop\\DiamondShop.csproj|solutionrelative:diamondshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,34 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "DiamondShop\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Controllers\\UserController.cs",
-              "RelativeToolTip": "DiamondShop\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAswBMAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T12:51:13.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\User.cs",
-              "RelativeDocumentMoniker": "DiamondShop\\Data\\User.cs",
-              "ToolTip": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\User.cs",
-              "RelativeToolTip": "DiamondShop\\Data\\User.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAADwvxEAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T12:11:26.898Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -83,12 +57,38 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "DiamondShop\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Controllers\\UserController.cs",
+              "RelativeToolTip": "DiamondShop\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T12:51:13.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\User.cs",
+              "RelativeDocumentMoniker": "DiamondShop\\Data\\User.cs",
+              "ToolTip": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\User.cs",
+              "RelativeToolTip": "DiamondShop\\Data\\User.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvw0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T12:11:26.898Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Program.cs",
               "RelativeDocumentMoniker": "DiamondShop\\Program.cs",
@@ -101,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\Role.cs",
               "RelativeDocumentMoniker": "DiamondShop\\Data\\Role.cs",
@@ -109,25 +109,24 @@
               "RelativeToolTip": "DiamondShop\\Data\\Role.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T12:10:54.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T12:10:54.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DiamondDbContext.cs",
               "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\DiamondDbContext.cs",
               "RelativeDocumentMoniker": "DiamondShop\\Data\\DiamondDbContext.cs",
               "ToolTip": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\Data\\DiamondDbContext.cs",
               "RelativeToolTip": "DiamondShop\\Data\\DiamondDbContext.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAmwEUAAAAgAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwC8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T11:26:49.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\appsettings.json",
               "RelativeDocumentMoniker": "DiamondShop\\appsettings.json",
@@ -135,8 +134,7 @@
               "RelativeToolTip": "DiamondShop\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-27T11:20:07.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T11:20:07.934Z"
             }
           ]
         }
