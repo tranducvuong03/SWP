@@ -6,7 +6,7 @@ using FAMS.Entities.Data;
 
 namespace DiamondShop.Controllers
 {
-    [Route("api/user")]
+    [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -17,12 +17,18 @@ namespace DiamondShop.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public IActionResult GetAll()
+		[HttpPost("Login")]
+		public async Task<IActionResult> Login(string username)
         {
-            
-            var user = _context.Users.ToList();
-            return Ok(user);
+            var user = await _context.Users.FindAsync(username);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(user);
+            }
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(int id)

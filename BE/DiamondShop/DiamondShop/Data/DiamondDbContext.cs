@@ -8,87 +8,199 @@ using System.Security.Claims;
 
 namespace FAMS.Entities.Data
 {
-    public class DiamondDbContext : DbContext
-    {
-        public DiamondDbContext(DbContextOptions<DiamondDbContext> options) : base(options) { }
+	public class DiamondDbContext : DbContext
+	{
+		public DiamondDbContext()
+		{
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<Certificate> Certificates { get; set; }
-        public DbSet<ProductDetail> ProductDetails { get; set; }
-        public DbSet<Warranty> Warranties { get; set; }
-        public DbSet<Feedback> Feedbacks { get; set; }
+		}
+		public DiamondDbContext(DbContextOptions<DiamondDbContext> options) : base(options)
+		{
+		}
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			if (!optionsBuilder.IsConfigured)
+			{
+				optionsBuilder.UseSqlServer(GetConnectionString());
+			}
+		}
+		private string GetConnectionString()
+		{
+			IConfiguration config = new ConfigurationBuilder()
+			 .SetBasePath(Directory.GetCurrentDirectory())
+			.AddJsonFile("appsettings.json", true, true)
+			.Build();
+			var strConn = /*config["ConnectionStrings:DB"]*/ config.GetConnectionString("EFDataContext");
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+			return strConn;
+		}
 
-            // Configure relationships and constraints here
+		public DbSet<User> Users { get; set; }
+		public DbSet<Role> Roles { get; set; }
+		public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+		public DbSet<Category> Categories { get; set; }
+		public DbSet<Product> Products { get; set; }
+		public DbSet<OrderDetail> OrderDetails { get; set; }
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<Certificate> Certificates { get; set; }
+		public DbSet<ProductDetail> ProductDetails { get; set; }
+		public DbSet<Warranty> Warranties { get; set; }
+		public DbSet<Feedback> Feedbacks { get; set; }
 
-            modelBuilder.Entity<User>()
-                .HasOne(u => u.Role)
-                .WithMany(r => r.Users)
-                .HasForeignKey(u => u.RoleId);
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<User>(e =>
+			{
+				e.ToTable("User");
+				e.HasKey(x => x.UserId);
+				e.Property(x => x.Username);
+				e.Property(x => x.Password);
+				e.Property(x => x.Email);
+				e.Property(x => x.FullName);
+				e.Property(x => x.Status);
+				e.Property(x => x.RoleId);
 
-            modelBuilder.Entity<Product>()
-                .HasOne(p => p.Category)
-                .WithMany(c => c.Products)
-                .HasForeignKey(p => p.CategoryId);
+				e.HasOne(x => x.Role)
+					.WithMany(x => x.Users)
+					.HasForeignKey(x => x.RoleId);
 
-            modelBuilder.Entity<Product>()
-                .HasOne(p => p.ProductDetail)
-                .WithMany()
-                .HasForeignKey(p => p.ProductDetailId);
+			});
 
-            modelBuilder.Entity<Product>()
-                .HasOne(p => p.Certificate)
-                .WithOne() // Đây là mối quan hệ 1-1 giữa Product và Certificate
-                .HasForeignKey<Product>(p => p.CertificateId);
+			modelBuilder.Entity<Role>(e =>
+			{
+				e.ToTable("Role");
+				e.HasKey(x => x.RoleId);
+				e.Property(x => x.RoleName);
+			});
 
-            modelBuilder.Entity<ShoppingCart>()
-                .HasOne(sc => sc.User)
-                .WithMany(u => u.ShoppingCarts)
-                .HasForeignKey(sc => sc.UserId);
+			modelBuilder.Entity<Certificate>(e =>
+			{
+				e.ToTable("Certificate");
+				e.HasKey(x => x.CertificateId);
+				e.Property(x => x.CaratWeight).HasColumnType("decimal(18,2)");
+				e.Property(x => x.Clarity);
+				e.Property(x => x.Color);
+				e.Property(x => x.Cut);
+				e.Property(x => x.ProductId);
 
-            modelBuilder.Entity<ShoppingCart>()
-                .HasOne(sc => sc.Product)
-                .WithMany(p => p.ShoppingCarts)
-                .HasForeignKey(sc => sc.ProductId);
+				e.HasOne(x => x.Product)
+					.WithOne(x => x.Certificate)
+					.HasForeignKey<Certificate>(x => x.ProductId);
+			});
 
-            modelBuilder.Entity<OrderDetail>()
-                .HasOne(od => od.Order)
-                .WithMany(o => o.OrderDetails)
-                .HasForeignKey(od => od.OrderId);
+			modelBuilder.Entity<Order>(e =>
+			{
+				e.ToTable("Order");
+				e.HasKey(x => x.OrderId);
+				e.Property(x => x.OrderDate);
+				e.Property(x => x.TotalPrice);
+				e.Property(x => x.Status);
+				e.Property(e => e.TotalPrice).HasColumnType("decimal(18,2)"); ;
+				e.Property(x => x.UserId);
 
-            modelBuilder.Entity<OrderDetail>()
-                .HasOne(od => od.Product)
-                .WithMany(p => p.OrderDetails)
-                .HasForeignKey(od => od.ProductId);
+				e.HasOne(x => x.User)
+					.WithMany(x => x.Orders)
+					.HasForeignKey(x => x.UserId);
+			});
 
-            modelBuilder.Entity<Warranty>()
-                .HasOne(w => w.User)
-                .WithMany(u => u.Warranties)
-                .HasForeignKey(w => w.UserId);
+			modelBuilder.Entity<OrderDetail>(e =>
+			{
+				e.ToTable("OrderDetail");
+				e.HasKey(x => x.OrderDetailId);
+				e.Property(e => e.Price).HasColumnType("decimal(18,2)");
 
-            modelBuilder.Entity<Warranty>()
-                .HasOne(w => w.Product)
-                .WithMany(p => p.Warranties)
-                .HasForeignKey(w => w.ProductId);
+			});
 
-            modelBuilder.Entity<Feedback>()
-                .HasOne(f => f.User)
-                .WithMany(u => u.Feedbacks)
-                .HasForeignKey(f => f.UserId);
+			modelBuilder.Entity<ProductDetail>(e =>
+			{
+				e.ToTable("ProductDetail");
+				e.HasKey(x => x.ProductDetailId);
+				e.Property(e => e.Carat).HasColumnType("decimal(18,2)");
+				e.Property(e => e.Clarity);
+				e.Property(e => e.Cut);
+				e.Property(e => e.Color);
+				e.Property(e => e.Origin);
+			});
 
-            modelBuilder.Entity<Feedback>()
-                .HasOne(f => f.Product)
-                .WithMany(p => p.Feedbacks)
-                .HasForeignKey(f => f.ProductId);
-        }
-    }
+			modelBuilder.Entity<Category>(e =>
+			{
+				e.ToTable("Category");
+				e.HasKey(x => x.CategoryId);
+				e.Property(e => e.CategoryName);
+
+				e.HasMany(x => x.Products)
+					.WithOne(x => x.Category)
+					.HasForeignKey(p => p.ProductId);
+			});
+
+			modelBuilder.Entity<Product>(e =>
+			{
+				e.ToTable("Product");
+				e.HasKey(x => x.ProductId);
+				e.Property(e => e.Description);
+				e.Property(e => e.Status);
+				e.Property(e => e.Stock);
+				e.Property(e => e.ProductDetailId);
+				e.Property(e => e.CategoryId);
+				e.Property(e => e.CertificateId);
+
+				e.HasOne(x => x.ProductDetail)
+					.WithOne(x => x.Product)
+					.HasForeignKey<Product>(x => x.ProductDetailId);
+
+				e.HasOne(x => x.Category)
+					.WithMany(x => x.Products)
+					.HasForeignKey(x => x.CategoryId);
+			});
+
+			modelBuilder.Entity<Warranty>(e =>
+			{
+				e.ToTable("Warranty");
+				e.HasKey(x => x.WarrantyId);
+				e.Property(e => e.WarrantyPeriod);
+				e.Property(e => e.ProductId);
+				e.Property(e => e.UserId);
+
+				e.HasOne(x => x.Product)
+					.WithMany(x => x.Warranties)
+					.HasForeignKey(x => x.ProductId);
+				e.HasOne(x => x.User)
+					.WithMany(x => x.Warranties)
+					.HasForeignKey(x => x.UserId);
+			});
+
+			modelBuilder.Entity<Feedback>(e =>
+			{
+				e.ToTable("Feedback");
+				e.HasKey(x => x.FeedbackId);
+				e.Property(e => e.Description);
+				e.Property(e => e.ProductId);
+				e.Property(e => e.UserId);
+
+				e.HasOne(x => x.Product)
+					.WithMany(x => x.Feedbacks)
+					.HasForeignKey(x => x.ProductId);
+
+				e.HasOne(x => x.User)
+					.WithMany(x => x.Feedbacks)
+					.HasForeignKey(x => x.UserId);
+			});
+
+			/*modelBuilder.Entity<Certificate>(e =>
+			{
+				e.ToTable("Certificate");
+				e.HasKey(x => x.CertificateId);
+				e.Property(e => e.Clarity);
+				e.Property(e => e.CaratWeight);
+				e.Property(e => e.Color);
+				e.Property(e => e.Cut);
+				e.Property(e => e.ProductId);
+
+				e.HasOne(x => x.Product)
+					.WithOne(x => x.Certificate)
+					.HasForeignKey<Certificate>(x => x.ProductId);
+
+			});*/
+		}
+	}
 }

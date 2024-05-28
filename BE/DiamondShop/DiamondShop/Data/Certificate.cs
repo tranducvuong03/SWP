@@ -1,19 +1,24 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DiamondShop.Data
 {
     public class Certificate
     {
         [Key]
+        [Required]
         public int CertificateId { get; set; }
+		[Required]
+		public decimal CaratWeight { get; set; }
+		[Required]
+		public string? Color { get; set; }
+		[Required]
+		public string? Clarity { get; set; }
+		[Required]
+		public string? Cut { get; set; }
 
-        public decimal CaratWeight { get; set; }
-        public string Color { get; set; } = null!;
-        public string Clarity { get; set; } = null!;
-        public string Cut { get; set; } = null!;
-
-        // Thêm trường ProductId để lưu trữ khóa ngoại của Product
+		[ForeignKey("Product")]
         public int ProductId { get; set; }
-        public Product Product { get; set; } = null!;
+        public virtual Product Product { get; set; } = null!;
     }
 }
