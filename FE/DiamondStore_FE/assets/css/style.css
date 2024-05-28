@@ -26,6 +26,9 @@ Table of content
 23. footer
 -------------------------------------------------------------------*/
 /*------ Typography Style Start ------*/
+.mobile-logo img{
+  width: 60%;
+}
 .logo img{
  width: 60%;
 }
