@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
+  },
+  "projects": {
+    "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectName": "DiamondShop",
+        "projectPath": "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "packagesPath": "C:\\Users\\tuanh\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tuanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 14743ac11cf36971d37e3e056e44f81695e4e949
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
