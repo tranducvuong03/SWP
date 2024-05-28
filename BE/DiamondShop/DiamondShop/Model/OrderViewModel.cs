@@ -1,8 +1,6 @@
 ﻿using DiamondShop.Data;
 namespace DiamondShop.Model
 {
-
-
     public class OrderModel
     {
         public int ProductId { get; set; }
@@ -10,4 +8,5 @@ namespace DiamondShop.Model
         public decimal Price { get; set; }
         public int Quantity { get; set; }
     }
+
 }

@@ -6,7 +6,9 @@ using FAMS.Entities.Data;
 
 namespace DiamondShop.Controllers
 {
-    public class UserController : Controller
+    [Route("api/user")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
         private readonly DiamondDbContext _context;
 
@@ -15,21 +17,15 @@ namespace DiamondShop.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public IActionResult GetAll()
         {
-            var users = await _context.Users
-                .Include(u => u.Role)
-                .Select(u => new Data.UserViewModel
-                {
-                    UserId = u.UserId,
-                    FullName = u.FullName,
-                    Email = u.Email,
-                    RoleName = u.Role.RoleName
-                })
-                .ToListAsync();
-
-            return View(users);
+            
+            var user = _context.Users.ToList();
+            return Ok(user);
         }
+
+        
     }
 }
 
