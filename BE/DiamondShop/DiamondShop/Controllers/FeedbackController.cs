@@ -15,11 +15,11 @@ namespace DiamondShop.Controllers
 		[HttpGet]
 		public async Task<IActionResult> GetAllFeedbacks()
 		{
-			var feedback = await _context.Feedbacks
+			var feedbacks = await _context.Feedbacks
 				.Include(f => f.User)
 				.Include(f=>f.Product)
 				.ToListAsync();
-			return Ok(feedback);
+			return Ok(feedbacks);
 		}
 
 		[HttpGet("{id}")]

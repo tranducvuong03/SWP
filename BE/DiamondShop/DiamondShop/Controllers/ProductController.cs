@@ -15,12 +15,9 @@ namespace DiamondShop.Controllers
         public ProductController(DiamondDbContext context)
         {
             _context = context;
-<<<<<<< HEAD
         }
 
-        
-=======
-        }      
+                 
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
@@ -102,7 +99,7 @@ namespace DiamondShop.Controllers
 
             return NoContent();
         }
->>>>>>> 2dbe139735b726ba05365da0ec7ae7bba377faa2
+
     }
 }
 
