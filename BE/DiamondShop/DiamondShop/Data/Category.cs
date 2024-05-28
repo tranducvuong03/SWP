@@ -1,14 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DiamondShop.Data
 {
     public class Category
     {
         [Key]
-        public int CategoryId { get; set; }
+		[Required]
+		public int CategoryId { get; set; }
         [Required]
         public string CategoryName { get; set; } = null!;
+        [ForeignKey("Product")]
 
-        public ICollection<Product> Products { get; set; } = new List<Product>();
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

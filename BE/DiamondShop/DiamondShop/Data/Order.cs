@@ -6,16 +6,19 @@ namespace DiamondShop.Data
     public class Order
     {
         [Key]
+        [Required]  
         public int OrderId { get; set; }
 
         [ForeignKey("User")]
-        public int UserId { get; set; }
-        public User User { get; set; } = null!;
+        public string UserId { get; set; }
+		[Required]
+		public decimal TotalPrice { get; set; }
+		[Required]
+		public string Status { get; set; }
+		[Required]
+		public DateTime OrderDate { get; set; }
 
-        public decimal TotalPrice { get; set; }
-        public string Status { get; set; } = null!;
-        public DateTime OrderDate { get; set; }
-        public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-
-    }
+		public virtual User User { get; set; } = null!;
+		public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+	}
 }

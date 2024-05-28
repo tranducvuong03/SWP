@@ -6,14 +6,13 @@ namespace DiamondShop.Data
     public class ShoppingCart
     {
         [Key]
+        [Required] 
         public int CartId { get; set; }
 
         [ForeignKey("Product")]
         public int ProductId { get; set; }
-        public Product Product { get; set; } = null!;
-
-        [ForeignKey("User")]
-        public int UserId { get; set; }
-        public User User { get; set; } = null!;
+        
+		public virtual Product Product { get; set; } = null!;
+		public virtual User User { get; set; } = null!;
     }
 }
