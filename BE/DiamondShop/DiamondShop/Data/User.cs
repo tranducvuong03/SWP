@@ -8,7 +8,8 @@ namespace DiamondShop.Data
     {
         [Key]
         [Required]
-        public string UserId { get; set; }
+		[StringLength(50)]
+		public string UserId { get; set; }
         [ForeignKey("Role")]
         public int RoleId { get; set; }
         [ForeignKey("ShoppingCart")]

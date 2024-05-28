@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using DiamondShop.Data;
 using FAMS.Entities.Data;
+using DiamondShop.Model;
 namespace DiamondShop.Controllers
 {
     [Route("api/orders")]

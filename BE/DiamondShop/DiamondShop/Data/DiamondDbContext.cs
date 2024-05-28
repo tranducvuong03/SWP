@@ -128,9 +128,6 @@ namespace FAMS.Entities.Data
 				e.HasKey(x => x.CategoryId);
 				e.Property(e => e.CategoryName);
 
-				e.HasMany(x => x.Products)
-					.WithOne(x => x.Category)
-					.HasForeignKey(p => p.ProductId);
 			});
 
 			modelBuilder.Entity<Product>(e =>
@@ -151,6 +148,10 @@ namespace FAMS.Entities.Data
 				e.HasOne(x => x.Category)
 					.WithMany(x => x.Products)
 					.HasForeignKey(x => x.CategoryId);
+
+				e.HasOne(x => x.Certificate)
+					.WithOne(x => x.Product)
+					.HasForeignKey<Product>(x => x.CategoryId);
 			});
 
 			modelBuilder.Entity<Warranty>(e =>

@@ -10,7 +10,6 @@ namespace DiamondShop.Data
 		public int CategoryId { get; set; }
         [Required]
         public string CategoryName { get; set; } = null!;
-        [ForeignKey("Product")]
 
         public virtual ICollection<Product> Products { get; set; }
     }

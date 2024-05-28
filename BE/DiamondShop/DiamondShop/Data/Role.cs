@@ -8,6 +8,7 @@ namespace DiamondShop.Data
         public int RoleId { get; set; }
 
         [Required]
+        [StringLength(50)]
         public string RoleName { get; set; } = null!;
 
         // Quan hệ 1-n với User

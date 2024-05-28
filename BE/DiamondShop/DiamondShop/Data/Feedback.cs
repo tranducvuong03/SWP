@@ -14,7 +14,8 @@ namespace DiamondShop.Data
 
         [ForeignKey("Product")]
         public int ProductId { get; set; }
-        public string? Description { get; set; }
+		[StringLength(200)]
+		public string? Description { get; set; }
 
 		public virtual User User { get; set; }
 		public virtual Product Product { get; set; }

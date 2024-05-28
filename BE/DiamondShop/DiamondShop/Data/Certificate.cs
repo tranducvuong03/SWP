@@ -8,6 +8,9 @@ namespace DiamondShop.Data
         [Key]
         [Required]
         public int CertificateId { get; set; }
+		[ForeignKey("Product")]
+		public int ProductId { get; set; }
+
 		[Required]
 		public decimal CaratWeight { get; set; }
 		[Required]
@@ -17,8 +20,6 @@ namespace DiamondShop.Data
 		[Required]
 		public string? Cut { get; set; }
 
-		[ForeignKey("Product")]
-        public int ProductId { get; set; }
         public virtual Product Product { get; set; } = null!;
     }
 }

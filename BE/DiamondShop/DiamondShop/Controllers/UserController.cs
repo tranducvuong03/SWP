@@ -17,21 +17,8 @@ namespace DiamondShop.Controllers
             _context = context;
         }
 
-		[HttpPost("Login")]
-		public async Task<IActionResult> Login(string username)
-        {
-            var user = await _context.Users.FindAsync(username);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                return Ok(user);
-            }
-        }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetUserById(int id)
+        public async Task<IActionResult> GetUserById(string id)
         {
             var user = await _context.Users.FindAsync(id);
             if (user == null)
@@ -40,6 +27,7 @@ namespace DiamondShop.Controllers
             }
             return Ok(user);
         }
+
         [HttpPost]
         public async Task<IActionResult> CreateUser([FromBody] User user)
         {
@@ -53,7 +41,7 @@ namespace DiamondShop.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
+        public async Task<IActionResult> UpdateUser(string id, [FromBody] User user)
         {
             if (id != user.UserId)
             {
