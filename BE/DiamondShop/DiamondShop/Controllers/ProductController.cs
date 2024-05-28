@@ -5,8 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DiamondShop.Controllers
 {
+    [Route("api/products")]
+    [ApiController]
     public class ProductController : Controller
     {
+
         private readonly DiamondDbContext _context;
 
         public ProductController(DiamondDbContext context)

@@ -8256,27 +8256,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cryno\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "projectName": "DiamondShop",
       "projectPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
-=======
-      "projectUniqueName": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-      "projectName": "DiamondShop",
-      "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-      "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
-      "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
->>>>>>> d21c1be6766df1f3c74a61332752dd313367d597
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8358,11 +8350,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-<<<<<<< HEAD
       "message": "Problem reading the cache file D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problem reading the cache file D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> d21c1be6766df1f3c74a61332752dd313367d597
     }
   ]
 }
