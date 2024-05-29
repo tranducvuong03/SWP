@@ -8275,34 +8275,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\cryno\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\tuanh\\.nuget\\packages\\": {}
->>>>>>> 14743ac11cf36971d37e3e056e44f81695e4e949
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "projectUniqueName": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "projectName": "DiamondShop",
-      "projectPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-      "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
-      "outputPath": "D:\\Ecommerce\\BE\\DiamondShop\\DiamondShop\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-      "projectName": "DiamondShop",
-      "projectPath": "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "projectPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "packagesPath": "C:\\Users\\tuanh\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual code 2022\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+      "outputPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tuanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 14743ac11cf36971d37e3e056e44f81695e4e949
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8378,5 +8363,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
