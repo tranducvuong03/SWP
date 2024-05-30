@@ -8,7 +8,8 @@ export default function Home() {
         <div className="hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">
            
             <div className="hero-single-slide hero-overlay">
-                <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home2-slide1.jpg">
+                {/* <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home2-slide1.jpg"> */}
+                <div className="hero-slider-item bg-img" style={{ backgroundImage: `url(/assets/img/slider/home2-slide1.jpg)` }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
@@ -26,7 +27,8 @@ export default function Home() {
 
            
             <div className="hero-single-slide hero-overlay">
-                <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home2-slide2.jpg">
+                {/* <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home2-slide2.jpg"> */}
+                <div className="hero-slider-item bg-img" style={{ backgroundImage: `url(/assets/img/slider/home2-slide2.jpg)` }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
@@ -44,7 +46,8 @@ export default function Home() {
 
            
             <div className="hero-single-slide hero-overlay">
-                <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home1-slide1.jpg">
+                {/* <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home1-slide1.jpg"> */}
+                <div className="hero-slider-item bg-img" style={{ backgroundImage: `url(/assets/img/slider/home1-slide1.jpg)` }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">

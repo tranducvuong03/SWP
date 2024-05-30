@@ -36,17 +36,17 @@
 			this.btnBrowse = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.testDataSet = new C_.TestDataSet();
-			this.imagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.imagesTableAdapter = new C_.TestDataSetTableAdapters.ImagesTableAdapter();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.imageNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
 			this.imageUrlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.imagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.testDataSet = new C_.TestDataSet();
+			this.imagesTableAdapter = new C_.TestDataSetTableAdapters.ImagesTableAdapter();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.testDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imagesBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.testDataSet)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// textBox1
@@ -125,20 +125,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(1078, 312);
 			this.dataGridView1.TabIndex = 6;
 			// 
-			// testDataSet
-			// 
-			this.testDataSet.DataSetName = "TestDataSet";
-			this.testDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// imagesBindingSource
-			// 
-			this.imagesBindingSource.DataMember = "Images";
-			this.imagesBindingSource.DataSource = this.testDataSet;
-			// 
-			// imagesTableAdapter
-			// 
-			this.imagesTableAdapter.ClearBeforeFill = true;
-			// 
 			// idDataGridViewTextBoxColumn
 			// 
 			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -172,6 +158,22 @@
 			this.imageUrlDataGridViewTextBoxColumn.Name = "imageUrlDataGridViewTextBoxColumn";
 			this.imageUrlDataGridViewTextBoxColumn.Width = 300;
 			// 
+			// imagesBindingSource
+			// 
+			this.imagesBindingSource.DataMember = "Images";
+			this.imagesBindingSource.DataSource = this.testDataSet;
+			// 
+			// testDataSet
+			// 
+			this.testDataSet.DataSetName = "TestDataSet";
+			this.testDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
+			// imagesTableAdapter
+			// 
+			this.imagesTableAdapter.ClearBeforeFill = true;
+			// 
+			
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,8 +191,8 @@
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.testDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.imagesBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.testDataSet)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
