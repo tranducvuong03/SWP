@@ -78,7 +78,7 @@ export default function Header() {
                                                 <i className="pe-7s-user"></i>
                                             </a>
                                             <ul className="dropdown-list">
-                                                <li><a href="login-register.html">Đăng nhập</a></li>
+                                                <li><a href="">Đăng nhập</a></li>
                                                 <li><a href="login-register.html">Đăng kí</a></li>
                                                 <li><a href="my-account.html">Thông tin tài khoản</a></li>
                                             </ul>
