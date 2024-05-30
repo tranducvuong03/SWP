@@ -21,27 +21,14 @@ builder.Services.AddDbContext<DiamondDbContext>(options =>
 });
 var app = builder.Build();
 //JWT SETTING
-builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
 // up JWT
 var jwtSettings = new JwtSettings();
 builder.Configuration.Bind("Jwt", jwtSettings);
-builder.Services.AddSingleton(jwtSettings);
+
 
 // Configure Authentication
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = jwtSettings.Issuer,
-            ValidAudience = jwtSettings.Audience,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
-        };
-    });
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
