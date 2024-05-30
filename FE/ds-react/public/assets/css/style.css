@@ -2205,7 +2205,7 @@ textarea:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (min-width: 1600px) {
+/* @media only screen and (min-width: 1600px) {
   .hero-slider-item {
     height: 670px;
   }
@@ -2219,7 +2219,7 @@ textarea:focus {
   .hero-slider-item {
     height: 350px;
   }
-}
+} */
 
 .hero-style-five .hero-slider-item {
   height: 800px;
