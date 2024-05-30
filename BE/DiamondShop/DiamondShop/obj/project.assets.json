@@ -8275,19 +8275,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tuanh\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "projectUniqueName": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
       "projectName": "DiamondShop",
-      "projectPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-      "packagesPath": "C:\\Users\\tuanh\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
+      "projectPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tuanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8360,16 +8360,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
