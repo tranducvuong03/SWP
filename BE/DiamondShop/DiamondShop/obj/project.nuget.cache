@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dv9RCOVL9uuZHYJbZy3Zz9pbG2RWujU6/T4sf9SY5uA4kPJP1wQW2ukkLnLWoKB0+oaOkmBd3khg6O0M7UZ/gQ==",
+  "dgSpecHash": "JIWyi2BrNdvv0rCLiTq7ofW0A2oT1QU1vbx+93BQRS9MSWpMV7C2S6wt7rdPLMyEaUDGwgbv8wiQuP/neK7pGA==",
   "success": true,
   "projectFilePath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
   "expectedPackageFiles": [
@@ -139,7 +139,10 @@
     "C:\\Users\\tuanh\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\tuanh\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\tuanh\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\tuanh\\.nuget\\packages\\scrutor\\3.3.0\\scrutor.3.3.0.nupkg.sha512",
     "C:\\Users\\tuanh\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "C:\\Users\\tuanh\\.nuget\\packages\\swashbuckle.aspnetcore.filters\\8.0.2\\swashbuckle.aspnetcore.filters.8.0.2.nupkg.sha512",
+    "C:\\Users\\tuanh\\.nuget\\packages\\swashbuckle.aspnetcore.filters.abstractions\\8.0.2\\swashbuckle.aspnetcore.filters.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\tuanh\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\tuanh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "C:\\Users\\tuanh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
