@@ -7,18 +7,14 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
     const sliderSettings = {
         fade: true,
+        infinite: true,
 		speed: 1000,
 		dots: true,
 		autoplay: true,
-         //prevArrow: '<button type="button" class="slick-prev"><i class="pe-7s-angle-left"></i></button>',
-		 //nextArrow: '<button type="button" class="slick-next"><i class="pe-7s-angle-right"></i></button>',
-        responsive: [{
-			breakpoint: 992,
-			settings: {
-				arrows: false,
-				dots: true
-			}
-		}]
+        arrows: true,
+        //prevArrow: '<button type="button" class="slick-prev pull-left"><i class="pe-7s-angle-left"></i></button>',
+		//nextArrow: '<button type="button" class="slick-next pull-right"><i class="pe-7s-angle-right"></i></button>',
+        
       };
 
   return (

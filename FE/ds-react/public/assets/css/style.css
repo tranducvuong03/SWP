@@ -301,10 +301,22 @@ textarea:focus {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  
+
 }
 .slick-arrow-style button.slick-arrow.slick-next {
   left: auto;
   right: 0;
+  content: ''; /* Xóa nội dung văn bản */
+  font-size: 0; /* Đảm bảo không có không gian cho văn bản */
+
+}
+.slick-arrow-style button.slick-arrow.slick-prev {
+  left: 0;
+  right: auto;
+  content: ''; /* Xóa nội dung văn bản */
+  font-size: 0; /* Đảm bảo không có không gian cho văn bản */
+  
 }
 .slick-arrow-style button.slick-arrow:hover {
   color: #c29958;
@@ -316,6 +328,7 @@ textarea:focus {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 1;
+  color: #c29958;
 }
 .slick-arrow-style:hover button.slick-arrow.slick-prev {
   left: -60px;
@@ -372,6 +385,7 @@ textarea:focus {
 }
 .slick-append button:hover {
   color: #c29958;
+
 }
 
 /*--------- slick slider dot style start -------*/
