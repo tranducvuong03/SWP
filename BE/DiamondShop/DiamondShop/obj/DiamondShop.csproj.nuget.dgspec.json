@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
+    "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
-    "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
+    "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectUniqueName": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "projectName": "DiamondShop",
-        "projectPath": "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+        "projectPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "packagesPath": "C:\\Users\\tuanh\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tuanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,9 +61,17 @@
               "target": "Package",
               "version": "[1.68.0.1869, )"
             },
+            "JWT": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -78,6 +86,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -107,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
