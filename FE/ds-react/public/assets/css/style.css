@@ -2910,6 +2910,7 @@ textarea:focus {
 
 /*------ twitter feed end ------*/
 /*----- product tab menu start -----*/
+
 .product-tab-menu {
   margin-top: -6px;
   margin-bottom: 35px;
@@ -3356,6 +3357,15 @@ textarea:focus {
 
 /*------- product item end -------*/
 /*-------- product list item start --------*/
+.product-carousel-5.product-item {
+  width: 20%; /* 100% / 5 products */
+  float: left;
+  padding: 0 10px;
+}
+
+.product-carousel-5.slick-list {
+  margin: 0 -10px;
+}
 .product-list-item {
   display: -webkit-box;
   display: -webkit-flex;
