@@ -33,5 +33,6 @@ namespace DiamondShop.Data
         public virtual ICollection<Warranty> Warranties { get; set; } = new List<Warranty>();
         public virtual ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
 		public virtual ICollection<Certificate> Certificates { get; set; } = new List<Certificate>();
-	}
+        public bool IsActive { get; set; }
+    }
 }

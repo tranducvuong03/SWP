@@ -20,7 +20,9 @@ namespace DiamondShop.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.Users
+                .Where(u => u.UserId == id && !u.IsActive)
+                .FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound();
@@ -76,6 +78,7 @@ namespace DiamondShop.Controllers
             {
                 return NotFound();
             }
+            user.IsActive = true;
 
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
