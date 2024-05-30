@@ -301,10 +301,22 @@ textarea:focus {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  
+
 }
 .slick-arrow-style button.slick-arrow.slick-next {
   left: auto;
   right: 0;
+  content: ''; /* Xóa nội dung văn bản */
+  font-size: 0; /* Đảm bảo không có không gian cho văn bản */
+
+}
+.slick-arrow-style button.slick-arrow.slick-prev {
+  left: 0;
+  right: auto;
+  content: ''; /* Xóa nội dung văn bản */
+  font-size: 0; /* Đảm bảo không có không gian cho văn bản */
+  
 }
 .slick-arrow-style button.slick-arrow:hover {
   color: #c29958;
@@ -316,6 +328,7 @@ textarea:focus {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 1;
+  color: #c29958;
 }
 .slick-arrow-style:hover button.slick-arrow.slick-prev {
   left: -60px;
@@ -372,6 +385,7 @@ textarea:focus {
 }
 .slick-append button:hover {
   color: #c29958;
+
 }
 
 /*--------- slick slider dot style start -------*/
@@ -2896,6 +2910,7 @@ textarea:focus {
 
 /*------ twitter feed end ------*/
 /*----- product tab menu start -----*/
+
 .product-tab-menu {
   margin-top: -6px;
   margin-bottom: 35px;
@@ -3342,6 +3357,15 @@ textarea:focus {
 
 /*------- product item end -------*/
 /*-------- product list item start --------*/
+.product-carousel-5.product-item {
+  width: 20%; /* 100% / 5 products */
+  float: left;
+  padding: 0 10px;
+}
+
+.product-carousel-5.slick-list {
+  margin: 0 -10px;
+}
 .product-list-item {
   display: -webkit-box;
   display: -webkit-flex;
