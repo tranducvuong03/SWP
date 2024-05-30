@@ -1,12 +1,31 @@
 import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function Home() {
+    const sliderSettings = {
+        fade: true,
+		speed: 1000,
+		dots: true,
+		autoplay: true,
+        prevArrow: '<button type="button" class="slick-prev"><i class="pe-7s-angle-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-next"><i class="pe-7s-angle-right"></i></button>',
+        responsive: [{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true
+			}
+		}]
+      };
   return (
     <div>
       
     <section className="slider-area">
         <div className="hero-slider-active slick-arrow-style slick-arrow-style_hero slick-dot-style">
-           
+        <Slider {...sliderSettings}>
             <div className="hero-single-slide hero-overlay">
                 {/* <div className="hero-slider-item bg-img" data-bg="assets/img/slider/home2-slide1.jpg"> */}
                 <div className="hero-slider-item bg-img" style={{ backgroundImage: `url(/assets/img/slider/home2-slide1.jpg)` }}>
@@ -61,7 +80,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-           
+            </Slider>  
         </div>
     </section>
    
