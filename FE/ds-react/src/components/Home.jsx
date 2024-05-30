@@ -10,8 +10,8 @@ export default function Home() {
 		speed: 1000,
 		dots: true,
 		autoplay: true,
-        prevArrow: '<button type="button" class="slick-prev"><i class="pe-7s-angle-left"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="pe-7s-angle-right"></i></button>',
+         //prevArrow: '<button type="button" class="slick-prev"><i class="pe-7s-angle-left"></i></button>',
+		 //nextArrow: '<button type="button" class="slick-next"><i class="pe-7s-angle-right"></i></button>',
         responsive: [{
 			breakpoint: 992,
 			settings: {
@@ -20,6 +20,7 @@ export default function Home() {
 			}
 		}]
       };
+
   return (
     <div>
       
@@ -80,7 +81,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            </Slider>  
+            </Slider>   
         </div>
     </section>
    
