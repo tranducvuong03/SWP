@@ -1,37 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
+    "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
-    "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
+    "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectUniqueName": "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "projectName": "DiamondShop",
-        "projectPath": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
-        "outputPath": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
-  },
-  "projects": {
-    "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "projectName": "DiamondShop",
-        "projectPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectPath": "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder (2)\\SWP\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
+        "outputPath": "D:\\New folder (2)\\SWP\\BE\\DiamondShop\\DiamondShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 2213bde9050e56f42a4235632ed68c5e7f6ea29c
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,6 +45,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
+            "Google.Apis.Gmail.v1": {
+              "target": "Package",
+              "version": "[1.68.0.3427, )"
+            },
+            "Google.Apis.Oauth2.v2": {
+              "target": "Package",
+              "version": "[1.68.0.1869, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
