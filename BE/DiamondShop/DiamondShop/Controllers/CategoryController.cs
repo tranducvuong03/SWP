@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using DiamondShop.Data;
 using FAMS.Entities.Data;
+using Microsoft.AspNetCore.Cors;
 namespace DiamondShop.Controllers
 {
     [Route("api/categories")]
@@ -16,7 +17,8 @@ namespace DiamondShop.Controllers
             _context = context;
         }
 
-        [HttpGet]
+		[EnableCors("AllowSpecificOrigin")]
+		[HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
             var categories = await _context.Categories.ToListAsync();

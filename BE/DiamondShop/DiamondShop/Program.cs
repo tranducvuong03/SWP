@@ -1,4 +1,4 @@
-using DiamondShop.Data;
+﻿using DiamondShop.Data;
 using FAMS.Entities.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -45,6 +45,18 @@ builder.Services.AddSwaggerGen(options =>
 	});
 	options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
+
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy("AllowSpecificOrigin",
+	builder =>
+	{
+		builder.WithOrigins("http://localhost:3000")
+	.AllowAnyHeader()
+	.AllowAnyMethod();
+	});
+});
+
 builder.Services.AddDbContext<DiamondDbContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
@@ -67,6 +79,8 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
+
+app.UseCors("AllowSpecificOrigin");
 
 app.UseHttpsRedirection();
 
