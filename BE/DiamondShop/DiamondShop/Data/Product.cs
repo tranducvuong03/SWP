@@ -11,9 +11,6 @@ namespace DiamondShop.Data
 
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
-        
-        [ForeignKey("ProductDetail")]
-        public int ProductDetailId { get; set; }
 
 		[StringLength(300)]
 		public string? Description { get; internal set; }
