@@ -6,67 +6,45 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Configuration;
 using Microsoft.AspNetCore.Authentication;
-using DiamondShop.Controllers;
-using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.json", optional: false);
-var app = builder.Build();
+
 // Add services to the container.
-var jwtSettings = app.Services.GetRequiredService<IOptions<JwtSettings>>().Value;
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-	.AddJwtBearer(options =>
+builder.Services.AddAuthentication(x =>
+{
+	x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+	x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+	x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+	x.TokenValidationParameters = new TokenValidationParameters
 	{
-		options.TokenValidationParameters = new TokenValidationParameters
-		{
-			ValidateIssuerSigningKey = true,
-			IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
-			.GetBytes(jwtSettings.SecretKey)),
-			ValidateIssuer = false,
-			ValidateAudience = false
-
-		};
-	});
+		ValidIssuer = builder.Configuration["Jwt:Issuer"],
+		ValidAudience = builder.Configuration["Jwt:Audience"],
+		IssuerSigningKey = new SymmetricSecurityKey
+			(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]!)),
+		ValidateIssuer = true,
+		ValidateAudience = true,
+		ValidateLifetime = true,
+		ValidateIssuerSigningKey = true
+	};
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
-{
-	options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-	{
-		Description = "Standard authorization: (\"{token}\")",
-		In = ParameterLocation.Header,
-		Name = "Authorization",
-		Type = SecuritySchemeType.ApiKey
-	});
-	options.OperationFilter<SecurityRequirementsOperationFilter>();
-});
-
-builder.Services.AddCors(options =>
-{
-	options.AddPolicy("AllowSpecificOrigin",
-	builder =>
-	{
-		builder.WithOrigins("http://localhost:3000")
-	.AllowAnyHeader()
-	.AllowAnyMethod();
-	});
-});
-
+builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DiamondDbContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
 	options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
-
+var app = builder.Build();
 //JWT SETTING
 
 // up JWT
-//var jwtSettings = new JwtSettings();
+var jwtSettings = new JwtSettings();
 builder.Configuration.Bind("Jwt", jwtSettings);
 
 
@@ -79,8 +57,6 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
-
-app.UseCors("AllowSpecificOrigin");
 
 app.UseHttpsRedirection();
 
