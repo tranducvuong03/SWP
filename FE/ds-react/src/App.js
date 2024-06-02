@@ -3,10 +3,8 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-<<<<<<< HEAD
 import Category from './api/CategoryAPI';
 
-=======
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nhan from './components/Nhan';
 import Day_chuyen from './components/Day_chuyen';
@@ -21,7 +19,6 @@ import Thong_tin_tk from './Login/Thong_tin_tk';
 import Chi_tiet_san_pham from './components/Chi_tiet_san_pham';
 import Lien_he from './components/Lien_he';
 import Gio_hang from './components/cart/Gio_hang';
->>>>>>> 14ee29d6fac22b10a75d81460cc2c5188f20f596
 function App() {
   return (
     <div>
