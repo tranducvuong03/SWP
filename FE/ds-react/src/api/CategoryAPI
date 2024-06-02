@@ -1,3 +1,4 @@
+export default function Category() {
 const [data ,setData] = useState([])
   const url = "https://localhost:7101/api/categories"
   
@@ -20,6 +21,6 @@ const [data ,setData] = useState([])
           )
         })
       }
-      
     </div>
   );
+}

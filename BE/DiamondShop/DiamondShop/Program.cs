@@ -46,12 +46,14 @@ builder.Services.AddSwaggerGen(options =>
 	options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
+//Connect to database
 builder.Services.AddDbContext<DiamondDbContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
 	options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
 
+//Add CORS to allow two different origin(IP:Port) connect together
 builder.Services.AddCors(options =>
 {
 	options.AddPolicy("AllowSpecificOrigin",
@@ -62,8 +64,8 @@ builder.Services.AddCors(options =>
 	.AllowAnyMethod();
 	});
 });
-//JWT SETTING
 
+//JWT SETTING
 // up JWT
 //var jwtSettings = new JwtSettings();
 builder.Configuration.Bind("Jwt", jwtSettings);
@@ -79,6 +81,7 @@ if (app.Environment.IsDevelopment())
 	app.UseSwaggerUI();
 }
 
+//Use CORS
 app.UseCors("AllowSpecificOrigin");
 
 app.UseHttpsRedirection();
