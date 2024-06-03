@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -22,12 +23,12 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className="widget-item">
-                            <h6 className="widget-title">Contact Us</h6>
+                            <h6 className="widget-title">Liên hệ</h6>
                             <div className="widget-body">
                                 <address className="contact-block">
                                     <ul>
-                                        <li><i className="pe-7s-home"></i> 4710-4890 Breckinridge USA</li>
-                                        <li><i className="pe-7s-mail"></i> <a href="mailto:demo@plazathemes.com">demo@yourdomain.com </a></li>
+                                        <li><i className="pe-7s-home"></i> Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam</li>
+                                        <li><i className="pe-7s-mail"></i> <a href="mailto:demo@plazathemes.com">passswsp@gmail.com </a></li>
                                         <li><i className="pe-7s-call"></i> <a href="tel:(012)800456789987">(012) 800 456 789-987</a></li>
                                     </ul>
                                 </address>
@@ -36,15 +37,14 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className="widget-item">
-                            <h6 className="widget-title">Information</h6>
+                            <h6 className="widget-title">Thông tin</h6>
                             <div className="widget-body">
                                 <ul className="info-list">
-                                    <li><a href="#">about us</a></li>
-                                    <li><a href="#">Delivery Information</a></li>
-                                    <li><a href="#">privet policy</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">contact us</a></li>
-                                    <li><a href="#">site map</a></li>
+                                    <li><Link to="/Lienhe">Liên hệ</Link></li>
+                                    <li><a href="#">Về chúng tôi</a></li>
+                                    <li><a href="#">Chính sách bảo mật</a></li>
+                                    <li><Link to="/Chinhsach">Điều khoản và chính sách</Link></li>
+                                    <li><a href="#">Vị trí</a></li>
                                 </ul>
                             </div>
                         </div>

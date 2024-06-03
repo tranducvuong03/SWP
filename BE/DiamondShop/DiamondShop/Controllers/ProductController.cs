@@ -17,11 +17,6 @@ namespace DiamondShop.Controllers
             _context = context;
         }
 
-<<<<<<< HEAD
-        
-=======
-                 
->>>>>>> 14743ac11cf36971d37e3e056e44f81695e4e949
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
@@ -103,10 +98,6 @@ namespace DiamondShop.Controllers
 
             return NoContent();
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> 14743ac11cf36971d37e3e056e44f81695e4e949
     }
 }
 

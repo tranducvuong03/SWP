@@ -9,8 +9,8 @@ namespace DiamondShop.Data
 		[Required]
 		public int CategoryId { get; set; }
         [Required]
-        public string CategoryName { get; set; } = null!;
+        public string? CategoryName { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public ICollection<Product> Products { get;} = new List<Product>();
     }
 }

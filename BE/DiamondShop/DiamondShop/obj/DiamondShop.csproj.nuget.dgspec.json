@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
+    "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {}
   },
   "projects": {
-    "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
+    "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "projectUniqueName": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
         "projectName": "DiamondShop",
-        "projectPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
-        "packagesPath": "C:\\Users\\tuanh\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual code 2022\\DiamondShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
+        "projectPath": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\DiamondShop.csproj",
+        "packagesPath": "C:\\Users\\cryno\\.nuget\\packages\\",
+        "outputPath": "D:\\NewShop\\BE\\DiamondShop\\DiamondShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tuanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cryno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,38 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
+            "Google.Apis.Gmail.v1": {
+              "target": "Package",
+              "version": "[1.68.0.3427, )"
+            },
+            "Google.Apis.Oauth2.v2": {
+              "target": "Package",
+              "version": "[1.68.0.1869, )"
+            },
+            "JWT": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
@@ -59,6 +91,18 @@
               "target": "Package",
               "version": "[8.0.5, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -66,6 +110,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -87,7 +135,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

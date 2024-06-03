@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiamondShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7258b8ce6b9e952840b9934b514dc76acffa2315")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeaf040476fee7ec2306cebdb72ced78bee5b4d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiamondShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiamondShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DiamondShop.Data
 {
@@ -7,7 +8,10 @@ namespace DiamondShop.Data
         [Key]
         [Required]
 		public int ProductDetailId { get; set; }
-        [StringLength(50)]
+		[ForeignKey("Product")]
+		[Required]
+		public int ProductId { get; set; }
+		[StringLength(50)]
 		[Required]
 		public string? Origin { get; set; }
 		[Required]
