@@ -6147,8 +6147,14 @@ only screen and (max-width: 767.98px) {
 }
 
 /*------- input box style css start -------*/
+.member-area-from-wrap {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; 
+}
 .single-input-item {
   margin-top: 20px;
+  width: 500px;
 }
 
 .single-input-item label {
@@ -6638,7 +6644,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   background-color: #fff;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  padding: 23px 30px 60px;
+  padding: 30px 30px 60px;
+  
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -6657,24 +6664,35 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 /*Login with Google*/
 .login-with-google {
-  position: absolute;
+  /* position: absolute;
   width: 15%;
   margin-left: 25%;
   margin-top: 14px;
   border: 1px grey solid;
   border-radius: 10px;
   height: auto;
-  margin: 14px 385px 10px;
+  margin: 14px 385px 10px; */
+  width: auto; /* Đặt chiều rộng tự động để tránh vấn đề căn giữa */
+  margin-top: 14px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  padding: 5px 20px; /* Thêm padding để tạo không gian bên trong nút */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 75px;
 }
 
 .login-with-google span {
   position: relative;
   left: 10px;
+  
 }
 
 .login-with-google img {
   width: 20px;
   height: 20px;
+  padding-bottom: 3px;
 }
 
 .btn-login {

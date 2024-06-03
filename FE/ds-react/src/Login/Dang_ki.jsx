@@ -21,7 +21,7 @@ export default function Dang_ki() {
         </div>
         <div class="login-register-wrapper section-padding">
             <div class="container">
-                <div class="member-area-from-wrap"></div>
+                <div class="member-area-from-wrap">
             <div class="login-reg-form-wrap sign-up-form">
                 <h5>Đăng Kí</h5>
                 {/* Register Form */}
@@ -34,7 +34,7 @@ export default function Dang_ki() {
                         {/* Input Email */}
                         <input type="email" placeholder="Email" required />
                     </div>
-                    <div class="row">
+                    
                         <div class="col-lg-6">
                             <div class="single-input-item">
                                 {/* Input Password */}
@@ -47,11 +47,12 @@ export default function Dang_ki() {
                                 <input type="password" placeholder="Xác Nhận Mật Khẩu" required />
                             </div>
                         </div>
-                    </div>
+                    
                     <div class="single-input-item">
                         <button class="btn btn-sqr">Đăng Kí</button>
                     </div>
                 </form>
+            </div>
             </div>
             </div>
         </div>
