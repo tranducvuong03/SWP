@@ -1825,7 +1825,7 @@ export default function Home() {
                                 <h5 className="testimonial-author">Johny Dang </h5>
                             </div>
                             <div className="testimonial-content">
-                                <p>Vivamus a lobortis ipsum, vel condimentum magna. Etiam id turpis tortor. Nunc scelerisque, nisi a blandit varius, nunc purus venenatis ligula, sed venenatis orci augue nec sapien. Cum sociis natoque</p>
+                                <p>Hàng ở đây đẹp đến nỗi ngày nào tôi cũng phải đặt hàng</p>
                                 <div className="ratings">
                                     <span><i className="fa fa-star-o"></i></span>
                                     <span><i className="fa fa-star-o"></i></span>
@@ -1833,7 +1833,7 @@ export default function Home() {
                                     <span><i className="fa fa-star-o"></i></span>
                                     <span><i className="fa fa-star-o"></i></span>
                                 </div>
-                                <h5 className="testimonial-author">Maria Mora</h5>
+                                <h5 className="testimonial-author">Huỳnh Thanh Vinh</h5>
                             </div>
                         </div>
                     </div>
