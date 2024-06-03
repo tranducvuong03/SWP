@@ -24,33 +24,27 @@ export default function Dang_ki() {
                 <div class="member-area-from-wrap"></div>
             <div class="login-reg-form-wrap sign-up-form">
                 <h5>Đăng Kí</h5>
+                {/* Register Form */}
                 <form action="#" method="post">
                     <div class="single-input-item">
+                        {/* Input Name */}
                         <input type="text" placeholder="Họ và tên" required />
                     </div>
                     <div class="single-input-item">
+                        {/* Input Email */}
                         <input type="email" placeholder="Email" required />
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="single-input-item">
+                                {/* Input Password */}
                                 <input type="password" placeholder="Mật Khẩu" required />
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="single-input-item">
+                                {/* Input Confirm Password */}
                                 <input type="password" placeholder="Xác Nhận Mật Khẩu" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-input-item">
-                        <div class="login-reg-form-meta">
-                            <div class="remember-meta">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="subnewsletter" />
-                                    <label class="custom-control-label" for="subnewsletter">Đăng Kí Nhận Tin
-                                        Mới Nhất Của Chúng Tôi</label>
-                                </div>
                             </div>
                         </div>
                     </div>

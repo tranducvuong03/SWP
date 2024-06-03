@@ -29,25 +29,30 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
-<<<<<<< HEAD
 //Connect to database
-=======
 // Configure CORS
 builder.Services.AddCors(options => options.AddPolicy("AllowSpecificOrigin", policy =>
     policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
 // Configure DbContext
->>>>>>> 14ee29d6fac22b10a75d81460cc2c5188f20f596
 builder.Services.AddDbContext<DiamondDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
 
-<<<<<<< HEAD
 //Add CORS to allow two different origin(IP:Port) connect together
 builder.Services.AddCors(options =>
-=======
+{
+	options.AddPolicy("AllowSpecificOrigin",
+	builder =>
+	{
+		builder.WithOrigins("http://localhost:3000")
+	.AllowAnyHeader()
+	.AllowAnyMethod();
+	});
+});
+
 // Configure JwtSettings
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 
@@ -55,7 +60,6 @@ builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"))
 var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();
 var key = Encoding.ASCII.GetBytes(jwtSettings.SecretKey);
 builder.Services.AddAuthentication(options =>
->>>>>>> 14ee29d6fac22b10a75d81460cc2c5188f20f596
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -73,7 +77,6 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
 });
-<<<<<<< HEAD
 
 //JWT SETTING
 // up JWT
@@ -82,8 +85,6 @@ builder.Configuration.Bind("Jwt", jwtSettings);
 
 
 // Configure Authentication
-=======
->>>>>>> 14ee29d6fac22b10a75d81460cc2c5188f20f596
 
 // Build the app
 var app = builder.Build();

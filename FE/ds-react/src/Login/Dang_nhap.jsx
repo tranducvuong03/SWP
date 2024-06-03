@@ -50,7 +50,7 @@ export default function Dang_nhap() {
                                 </div>
                             </form>
                             
-                            <h5 id="other-services"><span>or continue with</span></h5>
+                            <h5 id="other-services"><span>đăng nhập với</span></h5>
 
                             <div class="login-with-google">
                                 <button class="btn-login" onclick="loginWithGoogle()">
