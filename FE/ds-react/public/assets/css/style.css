@@ -5276,7 +5276,7 @@ only screen and (max-width: 767.98px) {
 /*------ shop page style start ------*/
 /*----- product details slider start ----*/
 .pro-large-img {
-  position: relative;
+  width: 50px; /* Adjust as needed */
   cursor: pointer;
 }
 
@@ -5289,10 +5289,13 @@ only screen and (max-width: 767.98px) {
 
 .pro-nav-thumb {
   cursor: pointer;
+  margin: 0 5px;
 }
 
 .pro-nav {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /*----- product details slider end ----*/
@@ -6673,7 +6676,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   height: auto;
   margin: 14px 385px 10px; */
   width: auto; /* Đặt chiều rộng tự động để tránh vấn đề căn giữa */
-  margin-top: 14px;
+  margin-top: 10px;
   border: 1px grey solid;
   border-radius: 10px;
   padding: 5px 20px; /* Thêm padding để tạo không gian bên trong nút */
@@ -6692,7 +6695,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .login-with-google img {
   width: 20px;
   height: 20px;
-  padding-bottom: 3px;
+
 }
 
 .btn-login {
@@ -7026,3 +7029,49 @@ only screen and (max-width: 767.98px) {
 }
 
 /*----- footer area end -----*/
+/*----- diamond price table*/
+.diamond-price-list {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.hightlight-color {
+  font-size: 24px;
+  color: #d62e2e;
+}
+
+.highlight {
+  font-size: 36px;
+  color: #d62e2e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: #8c6b2f;
+  color: #fff;
+  padding: 10px;
+}
+
+tbody td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody td:nth-child(1) {
+  font-weight: bold;
+}
+/*----- diamond price table end */

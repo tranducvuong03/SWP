@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -40,22 +40,30 @@ export default function Home() {
 		//nextArrow: '<button type="button" class="slick-next"><i class="pe-7s-angle-right"></i></button>',
 		slidesToScroll: 1
     };
-    const First_FourthSliderSettings = {
-        
-            arrows: false,
-            asNavFor: '.testimonial-thumb-carousel',    
-        
-        
+    const contentSlider = useRef(null);
+    const thumbSlider = useRef(null);
+
+    const settingsContent = {
+    arrows: false,
+    asNavFor: thumbSlider.current,
+
     };
-    const Second_FourthSliderSettings = {
-        // product details slider nav active     
-        speed: 1000,  
+
+    const settingsThumb = {
+        slidesToShow: 3,
+        asNavFor: contentSlider.current,
+        centerMode: true,
+        arrows: false,
+        centerPadding: 0,
+        focusOnSelect: true,
+
         slidesToShow: 3,
         asNavFor: '.testimonial-content-carousel',
-        centerMode: true,
-        arrows: true,
+		centerMode: true,
+		arrows: false,
         centerPadding: 0,
-        focusOnSelect: true
+		focusOnSelect: true
+
     };
     const FifthSliderSettings = {
             speed: 1000,
@@ -1868,9 +1876,9 @@ export default function Home() {
                 <div className="col-12">
                 
                     <div className="testimonial-thumb-wrapper">
+                    <Slider {...settingsThumb} ref={thumbSlider} className="testimonial-thumb-carousel">
                     
-                        <div className="testimonial-thumb-carousel">     
-                        <Slider {...First_FourthSliderSettings}>               
+                                       
                             <div className="testimonial-thumb">
                                 <img src="assets/img/testimonial/tran-thanh.png" alt="testimonial-thumb"/>
                             </div>
@@ -1883,15 +1891,14 @@ export default function Home() {
                             <div className="testimonial-thumb">
                                 <img src="assets/img/testimonial/testimonial-2.png" alt="testimonial-thumb"/>
                             </div>    
-                            </Slider>                 
-                        </div>
+                                            
                         
+                        </Slider> 
                     </div>
                     
                     <div className="testimonial-content-wrapper">
-                    
-                        <div className="testimonial-content-carousel">
-                        <Slider {...Second_FourthSliderSettings}>
+                     <Slider {...settingsContent} ref={contentSlider} className="testimonial-content-carousel">
+                        
                             <div className="testimonial-content">
                                 <p>Tôi đã khóc khi đã mua được sản phẩm tuyệt vời như thế này. Cảm ơn cửa hàng Enternal Sparkle</p>
                                 <div className="ratings">
@@ -1936,9 +1943,9 @@ export default function Home() {
                                 </div>
                                 <h5 className="testimonial-author">Maria Mora</h5>
                             </div>
-                            </Slider> 
-                        </div>
+                           
                         
+                        </Slider>
                     </div>
                 
                 </div>

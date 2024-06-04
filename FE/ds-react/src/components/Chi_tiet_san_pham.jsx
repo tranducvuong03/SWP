@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 export default function Chi_tiet_san_pham() {
+    const slider1 = useRef(null);
+  const slider2 = useRef(null);
+
+  const settingsMain = {
+    fade: true,
+    arrows: false,
+    speed: 1000,
+    slidesToShow: 1,
+    asNavFor: slider2.current,
+  };
+
+  const settingsThumbs = {
+    slidesToShow: 4,
+		
+		speed: 1000,
+        
+        asNavFor: slider1.current,
+		focusOnSelect: true,
+		//prevArrow: '<button type="button" class="slick-prev"><i class="lnr lnr-chevron-left"></i></button>',
+		//nextArrow: '<button type="button" class="slick-next"><i class="lnr lnr-chevron-right"></i></button>',
+		slidesToScroll: 1,
+        autoplay: true,
+        infinite: true,
+        
+
+  };
+
     return (
         <div>
             <div class="breadcrumb-area">
@@ -20,7 +50,7 @@ export default function Chi_tiet_san_pham() {
                     </div>
                 </div>
             </div>
-      
+        
             <div class="shop-main-wrapper section-padding pb-0">
                 <div class="container">
                     <div class="row">
@@ -30,40 +60,49 @@ export default function Chi_tiet_san_pham() {
                             <div class="product-details-inner">
                                 <div class="row">
                                     <div class="col-lg-5">
-                                        <div class="product-large-slider">
-                                            <div class="pro-large-img img-zoom">
+                                    <Slider {...settingsMain} ref={slider1} className="product-large-slider">
+                                        
+                                        
+                                            <div className="pro-large-img img-zoom">
                                                 <img src="assets/img/product/product-details-img1.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-large-img img-zoom">
+                                            <div className="pro-large-img img-zoom">
                                                 <img src="assets/img/product/product-details-img2.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-large-img img-zoom">
+                                            <div className="pro-large-img img-zoom">
                                                 <img src="assets/img/product/product-details-img3.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-large-img img-zoom">
+                                            <div className="pro-large-img img-zoom">
                                                 <img src="assets/img/product/product-details-img4.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-large-img img-zoom">
+                                            <div className="pro-large-img img-zoom">
                                                 <img src="assets/img/product/product-details-img5.jpg" alt="product-details" />
                                             </div>
-                                        </div>
-                                        <div class="pro-nav slick-row-10 slick-arrow-style">
-                                            <div class="pro-nav-thumb">
+                                        
+                                        
+                                        </Slider>
+                                        <Slider {...settingsThumbs} ref={slider2} className="pro-nav slick-row-10 slick-arrow-style">
+                                        
+                                        
+                                            <div className="pro-nav-thumb">
                                                 <img src="assets/img/product/product-details-img1.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-nav-thumb">
+                                            <div className="pro-nav-thumb">
                                                 <img src="assets/img/product/product-details-img2.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-nav-thumb">
+                                            <div className="pro-nav-thumb">
                                                 <img src="assets/img/product/product-details-img3.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-nav-thumb">
+                                            <div className="pro-nav-thumb">
                                                 <img src="assets/img/product/product-details-img4.jpg" alt="product-details" />
                                             </div>
-                                            <div class="pro-nav-thumb">
+                                            <div className="pro-nav-thumb">
                                                 <img src="assets/img/product/product-details-img5.jpg" alt="product-details" />
                                             </div>
-                                        </div>
+                                        
+                                        
+                                        </Slider>
+                                        
                                     </div>
                                     <div class="col-lg-7">
                                         <div class="product-details-des">
@@ -275,7 +314,7 @@ export default function Chi_tiet_san_pham() {
                                 </div>
                             </div>
                         </div>
-                     
+
                         <section class="related-products section-padding">
                             <div class="container">
                                 <div class="row">

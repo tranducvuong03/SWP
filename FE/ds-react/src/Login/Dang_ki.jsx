@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { getCate, registerDefault } from '../api/RegisterAPI';
-import { apiUrl } from '../api/ConnectionAPI';
 
 export default function Dang_ki() {
 
@@ -23,15 +21,15 @@ export default function Dang_ki() {
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
+
             <div class="login-register-wrapper section-padding">
                 <div class="container">
                     <div class="member-area-from-wrap"></div>
                     <div class="login-reg-form-wrap sign-up-form">
                         <h5>Đăng Kí</h5>
                         {/* Register Form */}
-                        <form action="#" method="post">
-=======
+                        
+
         </div>
         <div class="login-register-wrapper section-padding">
             <div class="container">
@@ -39,7 +37,7 @@ export default function Dang_ki() {
             <div class="login-reg-form-wrap sign-up-form">
                 <h5>Đăng Kí</h5>
                 {/* Register Form */}
-                <form action="#" method="post">
+                
                     <div class="single-input-item">
                         {/* Input Name */}
                         <input type="text" placeholder="Họ và tên" required />
@@ -50,7 +48,7 @@ export default function Dang_ki() {
                     </div>
                     
                         <div class="col-lg-6">
->>>>>>> fa889ad6780744399eb388cf23a484919fb87b32
+
                             <div class="single-input-item">
                                 {/* Input Name */}
                                 {/* <input id="username" type="text" placeholder="Họ và tên" required /> */}
@@ -59,7 +57,7 @@ export default function Dang_ki() {
                                 {/* Input Email */}
                                 <input id="email" type="email" placeholder="Email" required />
                             </div>
-<<<<<<< HEAD
+
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="single-input-item">
@@ -77,27 +75,26 @@ export default function Dang_ki() {
                             <div class="single-input-item">
                                 <button class="btn btn-sqr">Đăng Kí</button>
                             </div>
-                        </form>
+                        
 
-                        <form method="post">
+                        
                             <input id="username" type="text" placeholder="Họ và tên" required />
                             <button class="btn btn-sqr">Đăng Kí</button>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
-=======
+
                         </div>
                     
                     <div class="single-input-item">
                         <button class="btn btn-sqr">Đăng Kí</button>
                     </div>
-                </form>
-            </div>
+                
             </div>
             </div>
         </div>
->>>>>>> fa889ad6780744399eb388cf23a484919fb87b32
+
         </div>
     )
 }

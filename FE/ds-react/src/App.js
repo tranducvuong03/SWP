@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Category from './api/CategoryAPI';
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Bang_gia_kim_cuong from './components/Bang_gia_kim_cuong';
 import Nhan from './components/Nhan';
 import Day_chuyen from './components/Day_chuyen';
 import Vong_tay from './components/Vong_tay';
@@ -41,6 +42,7 @@ function App() {
           <Route path='/Chitietsanpham'element={<Chi_tiet_san_pham />} />
           <Route path='/Lienhe'element={<Lien_he />} />
           <Route path='/Giohang'element={<Gio_hang />} />
+          <Route path='/Banggiakimcuong'element={<Bang_gia_kim_cuong />} />
         </Routes>
 
         <Footer />
