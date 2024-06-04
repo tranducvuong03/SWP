@@ -10,8 +10,14 @@ export default function About_us() {
                             <div class="breadcrumb-wrap">
                                 <nav aria-label="breadcrumb">
                                     <ul class="breadcrumb">
-                                        <li class="breadcrumb-item"><Link to="/"><i class="fa fa-home"></i></Link></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Về chúng tôi</li>
+                                        <li class="breadcrumb-item">
+                                            <Link to="/">
+                                                <i class="fa fa-home"></i>
+                                            </Link>
+                                            </li>
+                                        <li class="breadcrumb-item active" 
+                                        aria-current="page">Về chúng tôi
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
