@@ -2,7 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 export default function Bang_gia_kim_cuong() {
     return (
-        <div>        
+        <div> 
+            <div className="breadcrumb-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="breadcrumb-wrap">
+                                <nav aria-label="breadcrumb">
+                                    <ul className="breadcrumb">
+                                        <li className="breadcrumb-item"><Link to="/"><i className="fa fa-home"></i></Link>
+                                        </li>
+                                        <li className="breadcrumb-item active" aria-current="page">Bảng giá kim cương</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="diamond-price-list-header-notes">
                 <p>* Đơn vị tính: VND</p>
                 <p>* Áp dụng từ ngày 01/06</p>
