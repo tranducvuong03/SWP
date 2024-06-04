@@ -740,24 +740,43 @@ export default function Home() {
                                                                 </a>
                                                                 <div className="product-badge">
                                                                     <div className="product-label new">
-                                                                        <span>sale</span>
+                                                                        <span>Giảm giá</span>
                                                                     </div>
                                                                     <div className="product-label discount">
-                                                                        <span>new</span>
+                                                                        <span>Mới</span>
                                                                     </div>
                                                                 </div>
                                                                 <div className="button-group">
-                                                                    <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i className="pe-7s-like"></i></a>
-                                                                    <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Compare"><i className="pe-7s-refresh-2"></i></a>
-                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"><span data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View"><i className="pe-7s-search"></i></span></a>
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link to="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
                                                                 </div>
                                                                 <div className="cart-hover">
-                                                                    <button className="btn btn-cart">add to cart</button>
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
                                                                 </div>
                                                             </figure>
                                                             <div className="product-caption text-center">
-                                                                <div className="product-identity">
-                                                                    <p className="manufacturer-name"><a href="product-details.html">mony</a></p>
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <Link to="/Chitietsanpham">mony</Link>
+                                                                        </p>
                                                                 </div>
                                                                 <ul className="color-categories">
                                                                     <li>
@@ -772,13 +791,13 @@ export default function Home() {
                                                                     <li>
                                                                         <a className="c-brown" href="#" title="Brown"></a>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> */}
                                                                 <h6 className="product-name">
-                                                                    <a href="product-details.html">Handmade Golden Necklace</a>
+                                                                    <Link to="/Chitietsanpham">Dây chuyền Vàng trắng Ý 18K</Link>
                                                                 </h6>
                                                                 <div className="price-box">
-                                                                    <span className="price-regular">$50.00</span>
-                                                                    <span className="price-old"><del>$80.00</del></span>
+                                                                    <span className="price-regular">36.144.000đ</span>
+                                                                    <span className="price-old"><del>38.144.000đ</del></span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -786,26 +805,46 @@ export default function Home() {
                                                         <div className="product-item">
                                                             <figure className="product-thumb">
                                                                 <a href="product-details.html">
-                                                                    <img className="pri-img" src="assets/img/product/product-8.jpg" alt="product" />
-                                                                    <img className="sec-img" src="assets/img/product/product-11.jpg" alt="product" />
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/0000W060094-day-chuyen-bac-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/0000W060094-day-chuyen-bac-02.png" alt="product" />
                                                                 </a>
                                                                 <div className="product-badge">
                                                                     <div className="product-label new">
-                                                                        <span>new</span>
+                                                                        <span>Mới</span>
                                                                     </div>
                                                                 </div>
                                                                 <div className="button-group">
-                                                                    <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i className="pe-7s-like"></i></a>
-                                                                    <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Compare"><i className="pe-7s-refresh-2"></i></a>
-                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"><span data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View"><i className="pe-7s-search"></i></span></a>
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link href="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
                                                                 </div>
                                                                 <div className="cart-hover">
-                                                                    <button className="btn btn-cart">add to cart</button>
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
                                                                 </div>
                                                             </figure>
                                                             <div className="product-caption text-center">
-                                                                <div className="product-identity">
-                                                                    <p className="manufacturer-name"><a href="product-details.html">Diamond</a></p>
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">Diamond</a>
+                                                                    </p>
                                                                 </div>
                                                                 <ul className="color-categories">
                                                                     <li>
@@ -820,12 +859,12 @@ export default function Home() {
                                                                     <li>
                                                                         <a className="c-brown" href="#" title="Brown"></a>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> */}
                                                                 <h6 className="product-name">
-                                                                    <a href="product-details.html">Perfect Diamond Jewelry</a>
+                                                                    <Link to="/Chitietsanpham">Dây chuyền Bạc Ý</Link>
                                                                 </h6>
                                                                 <div className="price-box">
-                                                                    <span className="price-regular">$99.00</span>
+                                                                    <span className="price-regular">1.795.000đ</span>
                                                                     <span className="price-old"><del></del></span>
                                                                 </div>
                                                             </div>
