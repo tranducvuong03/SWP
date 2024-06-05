@@ -5840,6 +5840,7 @@ textarea:focus {
 
 /*------ contact info area end -------*/
 /*----- footer area start -----*/
+
 .footer-top {
   background-color: #f7f7f7;
 }
@@ -5975,3 +5976,58 @@ textarea:focus {
 }
 
 /*----- footer area end -----*/
+/*----- diamond price table*/
+
+.diamond-price-list-header-notes {
+  text-align: left;
+  margin: 50px auto;
+  width: 80%;
+}
+.diamond-price-list-header-notes p {
+font-size: 14px;
+}
+.diamond-price-list {
+width: 80%;
+margin: 50px auto;
+text-align: center;
+}
+
+.hightlight-color {
+font-size: 24px;
+color: #d62e2e;
+}
+
+.highlight {
+font-size: 36px;
+color: #d62e2e;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+thead th {
+background-color: #8c6b2f;
+color: #fff;
+padding: 10px;
+}
+
+tbody td {
+padding: 10px;
+border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #fff;
+}
+
+tbody td:nth-child(1) {
+font-weight: bold;
+}
+/*----- diamond price table end */

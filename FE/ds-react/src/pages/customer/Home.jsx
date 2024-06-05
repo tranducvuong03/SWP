@@ -218,22 +218,32 @@ export default function Home() {
                                 <div className="product-tab-menu">
                                     <ul className="nav justify-content-center">
                                         <li>
-                                            <Link to="#tab1"
+                                            <a href="#tab1"
                                                 className="active"
-                                                data-bs-toggle="tab"> Nhẫn</Link>
+                                                data-bs-toggle="tab"> Nhẫn
+                                            </a>
                                         </li>
 
                                         <li>
                                             <a href="#tab2"
-                                                data-bs-toggle="tab"> Dây chuyền </a>
+                                                data-bs-toggle="tab"> Dây chuyền
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab3"
+                                                data-bs-toggle="tab"> Mặt dây chuyền
+                                            </a>
                                         </li>
 
-                                        <li><a href="#tab3"
-                                            data-bs-toggle="tab"> Vòng tay </a>
+                                        <li>
+                                            <a href="#tab4"
+                                                data-bs-toggle="tab"> Vòng tay
+                                            </a>
                                         </li>
 
-                                        <li><a href="#tab4"
-                                            data-bs-toggle="tab"> Kim cương </a>
+                                        <li><a href="#tab5"
+                                            data-bs-toggle="tab"> Kim cương 
+                                            </a>
                                         </li>
 
                                     </ul>
@@ -654,6 +664,369 @@ export default function Home() {
                                                 </div>
                                             </div>
 
+                                            <div className="tab-pane fade" id="tab3">
+                                                <div className="product-carousel-4 slick-row-10 slick-arrow-style">
+                                                    <Slider {...SecondSliderSettings}>
+                                                        <div className="product-item">
+                                                            <figure className="product-thumb">
+                                                                <Link to="/Chitietsanpham">
+                                                                    <img className="pri-img"
+                                                                        src="assets\img\product\Mat-day-chuyen\ddddw060396-mat-day-chuyen-kim-cuong-vang-trang-kim-cuong-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets\img\product\Mat-day-chuyen\ddddw060396-mat-day-chuyen-kim-cuong-vang-trang-kim-cuong-02.png" alt="product" />
+                                                                </Link>
+                                                                <div className="product-badge">
+                                                                    {/* <div className="product-label new">
+                                                                        <span>Mới</span>
+                                                                    </div> */}
+                                                                    <div className="product-label discount">
+                                                                        <span>10%</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="button-group">
+                                                                    <a href="/Chitietsanpham"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </a>
+                                                                    <Link to="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div className="cart-hover">
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
+                                                                </div>
+                                                            </figure>
+                                                            <div className="product-caption text-center">
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">Gold</a>
+                                                                        </p>
+                                                                </div> */}
+                                                                {/* <ul className="color-categories">
+                                                                    <li>
+                                                                        <a className="c-lightblue" href="#" title="LightSteelblue"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-darktan" href="#" title="Darktan"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-grey" href="#" title="Grey"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-brown" href="#" title="Brown"></a>
+                                                                    </li>
+                                                                </ul> */}
+                                                                <h6 className="product-name">
+                                                                    <a href="product-details.html">Mặt dây chuyền Kim cương Vàng trắng 14K</a>
+                                                                </h6>
+                                                                <div className="price-box">
+                                                                    <span className="price-regular">13.580.000đ</span>
+                                                                    <span className="price-old"><del>14.680.000đ</del></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="product-item">
+                                                            <figure className="product-thumb">
+                                                                <a href="product-details.html">
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/ddddw060395-mat-day-chuyen-kim-cuong-vang-trang-kim-cuong-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/ddddw060395-mat-day-chuyen-kim-cuong-vang-trang-kim-cuong-02.png" alt="product" />
+                                                                </a>
+                                                                <div className="product-badge">
+                                                                    <div className="product-label new">
+                                                                        <span>Giảm giá</span>
+                                                                    </div>
+                                                                    <div className="product-label discount">
+                                                                        <span>Mới</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="button-group">
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <a href="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </a>
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div className="cart-hover">
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
+                                                                </div>
+                                                            </figure>
+                                                            <div className="product-caption text-center">
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <Link to="/Chitietsanpham">mony</Link>
+                                                                        </p>
+                                                                </div>
+                                                                <ul className="color-categories">
+                                                                    <li>
+                                                                        <a className="c-lightblue" href="#" title="LightSteelblue"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-darktan" href="#" title="Darktan"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-grey" href="#" title="Grey"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-brown" href="#" title="Brown"></a>
+                                                                    </li>
+                                                                </ul> */}
+                                                                <h6 className="product-name">
+                                                                    <Link to="/Chitietsanpham">Mặt dây chuyền Kim cương Vàng trắng 14K </Link>
+                                                                </h6>
+                                                                <div className="price-box">
+                                                                    <span className="price-regular">14.110.000đ</span>
+                                                                    <span className="price-old"><del>15.110.000đ</del></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="product-item">
+                                                            <figure className="product-thumb">
+                                                                <Link to="/Chitietsanpham">
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/dd00w000639-mat-day-chuyen-kim-cuong-vang-trang-14k-chu-h-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/dd00w000639-mat-day-chuyen-kim-cuong-vang-trang-14k-chu-h-02.png" alt="product" />
+                                                                </Link>
+                                                                <div className="product-badge">
+                                                                    <div className="product-label new">
+                                                                        <span>Mới</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="button-group">
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link href="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div className="cart-hover">
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
+                                                                </div>
+                                                            </figure>
+                                                            <div className="product-caption text-center">
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">Diamond</a>
+                                                                    </p>
+                                                                </div>
+                                                                <ul className="color-categories">
+                                                                    <li>
+                                                                        <a className="c-lightblue" href="#" title="LightSteelblue"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-darktan" href="#" title="Darktan"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-grey" href="#" title="Grey"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-brown" href="#" title="Brown"></a>
+                                                                    </li>
+                                                                </ul> */}
+                                                                <h6 className="product-name">
+                                                                    <Link to="/Chitietsanpham">Mặt dây chuyền Kim cương Vàng Trắng 14K</Link>
+                                                                </h6>
+                                                                <div className="price-box">
+                                                                    <span className="price-regular">7.896.000đ</span>
+                                                                    <span className="price-old"><del></del></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="product-item">
+                                                            <figure className="product-thumb">
+                                                                <a href="product-details.html">
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/ddddw001386-mat-day-chuyen-kim-cuong-vang-trang-14k-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/ddddw001386-mat-day-chuyen-kim-cuong-vang-trang-14k-02.png" alt="product" />
+                                                                </a>
+                                                                <div className="product-badge">
+                                                                    {/* <div className="product-label new">
+                                                                        <span>Giảm giá</span>
+                                                                    </div> */}
+                                                                    <div className="product-label discount">
+                                                                        <span>15%</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="button-group">
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link href="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div className="cart-hover">
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
+                                                                </div>
+                                                            </figure>
+                                                            <div className="product-caption text-center">
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">silver</a></p>
+                                                                </div>
+                                                                <ul className="color-categories">
+                                                                    <li>
+                                                                        <a className="c-lightblue" href="#" title="LightSteelblue"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-darktan" href="#" title="Darktan"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-grey" href="#" title="Grey"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-brown" href="#" title="Brown"></a>
+                                                                    </li>
+                                                                </ul> */}
+                                                                <h6 className="product-name">
+                                                                    <a href="product-details.html">Mặt dây chuyền Kim cương Vàng trắng 14K</a>
+                                                                </h6>
+                                                                <div className="price-box">
+                                                                    <span className="price-regular">113.204.000đ</span>
+                                                                    <span className="price-old"><del></del></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="product-item">
+                                                            <figure className="product-thumb">
+                                                                <Link to="/Chitietsanpham">
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/DDDDW002334-mat-day-chuyen-kim-cuong-vang-trang-14k-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/Mat-day-chuyen/DDDDW002334-mat-day-chuyen-kim-cuong-vang-trang-14k-02.png" alt="product" />
+                                                                </Link>
+                                                                <div className="product-badge">
+                                                                    <div className="product-label new">
+                                                                        <span>Mới</span>
+                                                                    </div>
+                                                                    <div className="product-label discount">
+                                                                        <span>20%</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="button-group">
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link to="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div className="cart-hover">
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
+                                                                </div>
+                                                            </figure>
+                                                            <div className="product-caption text-center">
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">mony</a>
+                                                                    </p>
+                                                                </div>
+                                                                <ul className="color-categories">
+                                                                    <li>
+                                                                        <a className="c-lightblue" href="#" title="LightSteelblue"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-darktan" href="#" title="Darktan"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-grey" href="#" title="Grey"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a className="c-brown" href="#" title="Brown"></a>
+                                                                    </li>
+                                                                </ul> */}
+                                                                <h6 className="product-name">
+                                                                    <a href="product-details.html">Mặt dây chuyền Kim cương Vàng Trắng 14K</a>
+                                                                </h6>
+                                                                <div className="price-box">
+                                                                    <span className="price-regular">35.708.000đ</span>
+                                                                    <span className="price-old"><del>38.708.000đ</del></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </Slider>
+                                                </div>
+                                            </div>
                                             <div className="tab-pane fade" id="tab2">
                                                 <div className="product-carousel-4 slick-row-10 slick-arrow-style">
                                                     <Slider {...SecondSliderSettings}>
@@ -873,29 +1246,50 @@ export default function Home() {
                                                         <div className="product-item">
                                                             <figure className="product-thumb">
                                                                 <a href="product-details.html">
-                                                                    <img className="pri-img" src="assets/img/product/product-9.jpg" alt="product" />
-                                                                    <img className="sec-img" src="assets/img/product/product-10.jpg" alt="product" />
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/0000W060096-day-chuyen-bac-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/0000W060096-day-chuyen-bac-02.png" alt="product" />
                                                                 </a>
                                                                 <div className="product-badge">
                                                                     <div className="product-label new">
-                                                                        <span>sale</span>
+                                                                        <span>Giảm giá</span>
                                                                     </div>
                                                                     <div className="product-label discount">
                                                                         <span>15%</span>
                                                                     </div>
                                                                 </div>
                                                                 <div className="button-group">
-                                                                    <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i className="pe-7s-like"></i></a>
-                                                                    <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Compare"><i className="pe-7s-refresh-2"></i></a>
-                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"><span data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View"><i className="pe-7s-search"></i></span></a>
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link href="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
                                                                 </div>
                                                                 <div className="cart-hover">
-                                                                    <button className="btn btn-cart">add to cart</button>
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
                                                                 </div>
                                                             </figure>
                                                             <div className="product-caption text-center">
-                                                                <div className="product-identity">
-                                                                    <p className="manufacturer-name"><a href="product-details.html">silver</a></p>
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">silver</a></p>
                                                                 </div>
                                                                 <ul className="color-categories">
                                                                     <li>
@@ -910,43 +1304,65 @@ export default function Home() {
                                                                     <li>
                                                                         <a className="c-brown" href="#" title="Brown"></a>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> */}
                                                                 <h6 className="product-name">
-                                                                    <a href="product-details.html">Diamond Exclusive Ornament</a>
+                                                                    <a href="product-details.html">Dây chuyền Bạc Ý </a>
                                                                 </h6>
                                                                 <div className="price-box">
-                                                                    <span className="price-regular">$55.00</span>
-                                                                    <span className="price-old"><del>$75.00</del></span>
+                                                                    <span className="price-regular">1.850.000đ</span>
+                                                                    <span className="price-old"><del>1.995.000đ</del></span>
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                         <div className="product-item">
                                                             <figure className="product-thumb">
-                                                                <a href="product-details.html">
-                                                                    <img className="pri-img" src="assets/img/product/product-10.jpg" alt="product" />
-                                                                    <img className="sec-img" src="assets/img/product/product-9.jpg" alt="product" />
-                                                                </a>
+                                                                <Link to="/Chitietsanpham">
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/gd0000w061234-day-chuyen-vang-trang-18k-01.png" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/gd0000w061234-day-chuyen-vang-trang-18k-02.png" alt="product" />
+                                                                </Link>
                                                                 <div className="product-badge">
                                                                     <div className="product-label new">
-                                                                        <span>new</span>
+                                                                        <span>Mới</span>
                                                                     </div>
                                                                     <div className="product-label discount">
                                                                         <span>20%</span>
                                                                     </div>
                                                                 </div>
                                                                 <div className="button-group">
-                                                                    <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i className="pe-7s-like"></i></a>
-                                                                    <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Compare"><i className="pe-7s-refresh-2"></i></a>
-                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick_view"><span data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View"><i className="pe-7s-search"></i></span></a>
+                                                                    <Link to="/Yeuthich"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to wishlist">
+                                                                        <i className="pe-7s-like"></i>
+                                                                    </Link>
+                                                                    <Link to="compare.html"
+                                                                        data-bs-toggle="tooltip"
+                                                                        data-bs-placement="left"
+                                                                        title="Add to Compare">
+                                                                        <i className="pe-7s-refresh-2"></i>
+                                                                    </Link>
+                                                                    <a href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#quick_view">
+                                                                        <span data-bs-toggle="tooltip"
+                                                                            data-bs-placement="left"
+                                                                            title="Quick View">
+                                                                            <i className="pe-7s-search"></i>
+                                                                        </span>
+                                                                    </a>
                                                                 </div>
                                                                 <div className="cart-hover">
-                                                                    <button className="btn btn-cart">add to cart</button>
+                                                                    <button className="btn btn-cart">Thêm vào giỏ hàng</button>
                                                                 </div>
                                                             </figure>
                                                             <div className="product-caption text-center">
-                                                                <div className="product-identity">
-                                                                    <p className="manufacturer-name"><a href="product-details.html">mony</a></p>
+                                                                {/* <div className="product-identity">
+                                                                    <p className="manufacturer-name">
+                                                                        <a href="product-details.html">mony</a>
+                                                                    </p>
                                                                 </div>
                                                                 <ul className="color-categories">
                                                                     <li>
@@ -961,27 +1377,29 @@ export default function Home() {
                                                                     <li>
                                                                         <a className="c-brown" href="#" title="Brown"></a>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> */}
                                                                 <h6 className="product-name">
-                                                                    <a href="product-details.html">Citygold Exclusive Ring</a>
+                                                                    <a href="product-details.html">Dây chuyền Vàng trắng Ý 18K</a>
                                                                 </h6>
                                                                 <div className="price-box">
-                                                                    <span className="price-regular">$60.00</span>
-                                                                    <span className="price-old"><del>$70.00</del></span>
+                                                                    <span className="price-regular">9.890.000đ</span>
+                                                                    <span className="price-old"><del>10.890.000đ</del></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </Slider>
                                                 </div>
                                             </div>
-                                            <div className="tab-pane fade" id="tab3">
+                                            <div className="tab-pane fade" id="tab4">
                                                 <div className="product-carousel-4 slick-row-10 slick-arrow-style">
                                                     <Slider {...SecondSliderSettings}>
                                                         <div className="product-item">
                                                             <figure className="product-thumb">
                                                                 <a href="product-details.html">
-                                                                    <img className="pri-img" src="assets/img/product/product-11.jpg" alt="product" />
-                                                                    <img className="sec-img" src="assets/img/product/product-8.jpg" alt="product" />
+                                                                    <img className="pri-img"
+                                                                        src="assets/img/product/product-11.jpg" alt="product" />
+                                                                    <img className="sec-img"
+                                                                        src="assets/img/product/product-8.jpg" alt="product" />
                                                                 </a>
                                                                 <div className="product-badge">
                                                                     <div className="product-label new">
@@ -1231,7 +1649,7 @@ export default function Home() {
                                                     </Slider>
                                                 </div>
                                             </div>
-                                            <div className="tab-pane fade" id="tab4">
+                                            <div className="tab-pane fade" id="tab5">
                                                 <div className="product-carousel-4 slick-row-10 slick-arrow-style">
                                                     <Slider {...SecondSliderSettings}>
                                                         <div className="product-item">

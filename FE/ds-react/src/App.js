@@ -17,6 +17,7 @@ import Thong_tin_tk from './Login/Thong_tin_tk';
 import Chi_tiet_san_pham from './pages/customer/Products/Chi_tiet_san_pham';
 import Lien_he from './pages/customer/Lien_he';
 import Gio_hang from './pages/cart/Gio_hang';
+import Bang_gia_kim_cuong from './pages/customer/Bang_gia_kim_cuong';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
           <Route path='/Chitietsanpham'element={<Chi_tiet_san_pham />} />
           <Route path='/Lienhe'element={<Lien_he />} />
           <Route path='/Giohang'element={<Gio_hang />} />
-         
+          <Route path='/Banggiakimcuong'element={<Bang_gia_kim_cuong />} />
         </Routes>
 
         <Footer />

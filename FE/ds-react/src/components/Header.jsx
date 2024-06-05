@@ -51,17 +51,20 @@ export default function Header() {
                                                     <li><Link to="/Daychuyen"> Dây chuyền </Link>
                                                        
                                                     </li>
-                                                    <li><a href="/Vongtay"> Vòng tay </a>
+                                                    <li><Link to="/Daychuyen"> Mặt dây chuyền </Link>
+                                                       
+                                                    </li>
+                                                    <li><Link to="/Vongtay"> Vòng tay </Link>
                                                        
                                                     </li>
                                                     
                                                 </ul>
                                             </li>
-                                            <li><a href="/Kimcuong"> Kim cương </a>
+                                            <li><Link to="/Kimcuong"> Kim cương </Link>
                                                        
                                             </li>
                                           
-                                            <li><a href="shop.html"> Bảng giá kim cương </a>
+                                            <li><Link to="/Banggiakimcuong"> Bảng giá kim cương </Link>
                                                        
                                             </li>
                                             <li><Link to ="/Vechungtoi">Về chúng tôi</Link>
