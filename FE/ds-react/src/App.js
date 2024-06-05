@@ -19,7 +19,9 @@ import Thong_tin_tk from './Login/Thong_tin_tk';
 import Chi_tiet_san_pham from './components/Chi_tiet_san_pham';
 import Lien_he from './components/Lien_he';
 import Gio_hang from './components/cart/Gio_hang';
+import getAllCategory from './api/CategoryAPI';
 function App() {
+
   return (
     <div>
       <Router>
@@ -43,12 +45,8 @@ function App() {
 
         <Footer />
       </Router>
-
-
-
+      
     </div>
-
-
 
   );
 }

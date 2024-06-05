@@ -18,7 +18,7 @@ namespace DiamondShop.Controllers
         }
 
 		[EnableCors("AllowSpecificOrigin")]
-		[HttpGet]
+		[HttpGet("GetAllCategories")]
         public async Task<IActionResult> GetAllCategories()
         {
             var categories = await _context.Categories.ToListAsync();
@@ -36,7 +36,7 @@ namespace DiamondShop.Controllers
             return Ok(category);
         }
 
-        [HttpPost]
+        [HttpPost("CreateACategory")]
         public async Task<IActionResult> CreateCategory([FromBody] Category category)
         {
             if (ModelState.IsValid)

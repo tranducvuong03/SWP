@@ -16,6 +16,10 @@ using FAMS.Entities.Data;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Google;
 
 namespace DiamondShop.Controllers
 {
@@ -23,12 +27,16 @@ namespace DiamondShop.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly DiamondDbContext _context;
         private readonly JwtSettings _jwtSettings;
 
-        public UserController(DiamondDbContext context, IOptions<JwtSettings> jwtSettings)
+        public UserController(DiamondDbContext context, SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IOptions<JwtSettings> jwtSettings)
         {
             _context = context;
+            _signInManager = signInManager;
+            _userManager = userManager;
             _jwtSettings = jwtSettings.Value;
         }
 
@@ -102,72 +110,75 @@ namespace DiamondShop.Controllers
             return NoContent();
         }
 
+
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginModel model)
         {
-            try
+            if (ModelState.IsValid)
             {
-                if (string.IsNullOrEmpty(model.Email) && string.IsNullOrEmpty(model.UserName))
+                var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    return Ok(new ApiResponse
+                    {
+                        Success = true,
+                        Message = "Login successful"
+                    });
+                }
+                else
                 {
                     return Ok(new ApiResponse
                     {
                         Success = false,
-                        Message = "Use Email or Username is required"
+                        Message = "Invalid login attempt"
                     });
                 }
-
-                User user = null;
-                if (!string.IsNullOrEmpty(model.UserName))
-                {
-                    user = await _context.Users.SingleOrDefaultAsync(u => u.Username == model.UserName);
-                }
-
-                if (user == null && !string.IsNullOrEmpty(model.Email))
-                {
-                    user = await _context.Users.SingleOrDefaultAsync(u => u.Email == model.Email);
-                }
-
-                if (user == null)
-                {
-                    return Ok(new ApiResponse
-                    {
-                        Success = false,
-                        Message = "Username or Email does not exist"
-                    });
-                }
-
-                if (!BCrypt.Net.BCrypt.Verify(model.Password, user.Password))
-                {
-                    return Ok(new ApiResponse
-                    {
-                        Success = false,
-                        Message = "Invalid password"
-                    });
-                }
-
-                if (!user.IsActive)
-                {
-                    return Ok(new ApiResponse
-                    {
-                        Success = false,
-                        Message = "Your account has been disabled"
-                    });
-                }
-
-                var token = GenerateToken(user);
-
-                return Ok(new ApiResponse
-                {
-                    Success = true,
-                    Message = "Authentication successful",
-                    Data = token
-                });
             }
-            catch (Exception ex)
-            {
-                return BadRequest("Login failed: " + ex.Message);
-            }
+
+            return BadRequest("Invalid login request");
         }
+
+        // Initiate Google login
+        [HttpGet("google-login")]
+        public IActionResult GoogleLogin()
+        {
+            var properties = new AuthenticationProperties { RedirectUri = Url.Action("GoogleLoginCallback") };
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
+
+        // Handle Google login callback
+        [HttpGet("google-login-callback")]
+        public async Task<IActionResult> GoogleLoginCallback()
+        {
+            var authenticateResult = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            if (!authenticateResult.Succeeded)
+                return BadRequest("Google login failed");
+
+            var emailClaim = authenticateResult.Principal.FindFirst(ClaimTypes.Email);
+            var user = await _userManager.FindByEmailAsync(emailClaim.Value);
+
+            if (user == null)
+            {
+                user = new IdentityUser
+                {
+                    UserName = emailClaim.Value,
+                    Email = emailClaim.Value
+                };
+                var result = await _userManager.CreateAsync(user);
+                if (!result.Succeeded)
+                    return BadRequest("Failed to create user account");
+            }
+
+            await _signInManager.SignInAsync(user, isPersistent: false);
+
+            return Ok(new ApiResponse
+            {
+                Success = true,
+                Message = "Google login successful"
+            });
+        }
+
 
         private string GenerateToken(User user)
         {
