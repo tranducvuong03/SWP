@@ -1872,7 +1872,7 @@ export default function Home() {
                         <div className="testimonial-thumb-carousel">     
                         <Slider {...First_FourthSliderSettings}>               
                             <div className="testimonial-thumb">
-                                <img src="assets/img/testimonial/tran-thanh.png" alt="testimonial-thumb"/>
+                                <img src="assets/img/testimonial/testimonial-1.png" alt="testimonial-thumb"/>
                             </div>
                             <div className="testimonial-thumb">
                                 <img src="assets/img/testimonial/ly-nha-ky-.png" alt="testimonial-thumb"/>

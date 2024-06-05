@@ -32,10 +32,18 @@ export default function About_us() {
                             <div class="about-content">
                                 <h2 class="about-title">Về Chúng Tôi</h2>
                                 <h5 class="about-sub-title">
-                                    Được thành lập vào năm 2024, Eternal Sparkle là cửa hàng kim cương danh tiếng tại Hồ Chí Minh. Chúng tôi tự hào mang đến những sản phẩm kim cương tinh tế, độc đáo và chất lượng cao cho khách hàng. Với mục tiêu tạo ra trải nghiệm mua sắm tuyệt vời, Eternal Sparkle không ngừng nỗ lực để đáp ứng mọi nhu cầu và mong muốn của khách hàng.
+                                    Được thành lập vào năm 2024, Eternal Sparkle là cửa hàng kim cương danh tiếng tại Hồ Chí Minh. 
+                                    Chúng tôi tự hào mang đến những sản phẩm kim cương tinh tế, 
+                                    độc đáo và chất lượng cao cho khách hàng. 
+                                    Với mục tiêu tạo ra trải nghiệm mua sắm tuyệt vời, 
+                                    Eternal Sparkle không ngừng nỗ lực để đáp ứng mọi nhu cầu và mong muốn của khách hàng.
                                 </h5>
-                                <p>Eternal Sparkle sở hữu một bộ sưu tập kim cương đa dạng, từ những thiết kế cổ điển đến hiện đại, phù hợp với mọi phong cách và dịp lễ. Chúng tôi cam kết chỉ cung cấp những viên kim cương đạt chuẩn quốc tế, đảm bảo về nguồn gốc và chất lượng. Đội ngũ nhân viên chuyên nghiệp và tận tâm của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn cho khách hàng, giúp họ tìm được món trang sức hoàn hảo nhất.</p>
-                                <p>Với trụ sở tọa lạc tại trung tâm thành phố Hồ Chí Minh, Eternal Sparkle mong muốn trở thành điểm đến tin cậy cho những ai yêu thích kim cương. Chúng tôi không chỉ bán sản phẩm, mà còn mang đến những giá trị vượt trội và trải nghiệm khó quên cho khách hàng. Hãy đến với Eternal Sparkle để cảm nhận vẻ đẹp vĩnh cửu và sự lấp lánh không ngừng nghỉ của kim cương.</p>
+                                <p>Eternal Sparkle sở hữu một bộ sưu tập kim cương đa dạng, từ những thiết kế cổ điển đến hiện đại, 
+                                    phù hợp với mọi phong cách và dịp lễ. Chúng tôi cam kết chỉ cung cấp những viên kim cương đạt chuẩn quốc tế, 
+                                    đảm bảo về nguồn gốc và chất lượng. Đội ngũ nhân viên chuyên nghiệp và tận tâm của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn cho khách hàng, giúp họ tìm được món trang sức hoàn hảo nhất.</p>
+                                <p>Với trụ sở tọa lạc tại trung tâm thành phố Hồ Chí Minh, 
+                                    Eternal Sparkle mong muốn trở thành điểm đến tin cậy cho những ai yêu thích kim cương. 
+                                    Chúng tôi không chỉ bán sản phẩm, mà còn mang đến những giá trị vượt trội và trải nghiệm khó quên cho khách hàng. Hãy đến với Eternal Sparkle để cảm nhận vẻ đẹp vĩnh cửu và sự lấp lánh không ngừng nghỉ của kim cương.</p>
                             </div>
                         </div>
                     </div>
@@ -94,7 +102,7 @@ export default function About_us() {
                         <div class="col-12">
                             <div class="testimonial-thumb-wrapper">
                                 <div class="testimonial-thumb-carousel">
-                                    <div class="testimonial-thumb">
+                                    <div class="col-3 testimonial-thumb">
                                         <img src="assets/img/testimonial/testimonial-1.png" alt="testimonial-thumb" />
                                     </div>
                                     <div class="testimonial-thumb">
